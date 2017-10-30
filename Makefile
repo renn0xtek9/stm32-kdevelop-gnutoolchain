@@ -1,12 +1,22 @@
 #--------------------------First catch enviroment variable
 STM32F10X_STD_PERIPH_PATH:=$(STM32F10X_STD_PERIPH_PATH)
+
+STM32F10X_USB_PERIPH_PATH:=$(STM32F10X_USB_PERIPH_PATH)
+ifndef STM32F10X_USB_PERIPH_PATH
+	$(error Please define environment variable STM32F10X_USB_PERIPH_PATH)
+endif
 ifndef STM32F10X_STD_PERIPH_PATH
 	$(error Please define environment variable STM32F10X_STD_PERIPH_PATH)
 endif
-STM32F10X_USB_PERIPH_PATH:=$(STM32F10X_USB_PERIPH_PATH)
-ifndef STM32F10X_USB_PERIPH_PATH
-		$(error Please define environment variable STM32F10X_USB_PERIPH_PATH)
+#--------------------------Check excutable 
+STFLASH := $(shell command -v st-flash 2> /dev/null)
+ifndef STFLASH
+	$(error "st-flash is not available please install it. Compile from source from https://github.com/texane/stlink")
 endif
+
+
+
+
 #--------------------------Define Pathes
 # TODO here under in device and CORE you might want to change CM3 if not using cortex M3
 DEVICE = $(STM32F10X_STD_PERIPH_PATH)/Libraries/CMSIS/CM3/DeviceSupport/ST/STM32F10x
@@ -68,8 +78,10 @@ LDFLAGS += -T$(LDSCRIPT) -mthumb -mcpu=$(CORETYPE) -mfloat-abi=soft -Wl,-Map=out
 
 
 
+# checkflash:
 
-check: 	
+	
+checkcompile: 	
 	@echo SOURCES "\n"  $(SOURCES) 
 	@echo "\n"
 	@echo INCLUDES "\n" $(INCLUDES) 
@@ -93,7 +105,7 @@ $(BUILDDIR)/%.o: %.s
 	mkdir -p $(dir $@)
 	$(CC) -c $(CFLAGS) $< -o $@
 
-all: $(BIN)	
+all: checkcompile $(BIN)	
 
 flash: $(BIN)
 	st-flash write $(BIN) 0x8000000
