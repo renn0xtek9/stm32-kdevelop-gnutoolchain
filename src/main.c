@@ -19,10 +19,7 @@ void InitInputOutput()
 	GPIO_Init(GPIOA,&gpioa_init_struct);							// Initialize it
 	GPIO_SetBits(GPIOA,GPIO_Pin_5);	
 }
-	
 
-
-	
 int main(void)
 {
 	InitInputOutput();

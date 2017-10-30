@@ -10,33 +10,16 @@ ifndef STM32F10X_STD_PERIPH_PATH
 endif
 
 STLINK_DEVICE := $(STLINK_DEVICE)
-ifndef STLINK_DEVICE
-	$(error Please define environment variable STLINK_DEVICE)
-endif
 #--------------------------Check excutable 
 STFLASH := $(shell command -v st-flash 2> /dev/null)
-ifndef STFLASH
-	$(error "st-flash is not available please install it. Compile from source from https://github.com/texane/stlink")
-endif
-OPENOCD := $(shell command -v openocd 2> /dev/null)
-ifndef OPENOCD
-	$(error "openocd is not available please install it. e.g. sudo apt-get install openocd)
-endif
 ARM_NONE_EABI_GDB := $(shell command -v arm-none-eabi-gdb 2>/dev/null)
-ifndef ARM_NONE_EABI_GDB
-	$(error "arm-none-eabi-gdb is not available please install it. e.g. sudo apt-get install arm-none-eabi-gdb)
-endif
-
 
 #--------------------------Define Pathes
 # TODO here under in device and CORE you might want to change CM3 if not using cortex M3
 DEVICE = $(STM32F10X_STD_PERIPH_PATH)/Libraries/CMSIS/CM3/DeviceSupport/ST/STM32F10x
 CORE = $(STM32F10X_STD_PERIPH_PATH)/Libraries/CMSIS/CM3/CoreSupport
-
-PERIPH=StdPeriph_Driver/
+PERIPH=StdPeriph_Driver
 BUILDDIR = build
-
-
 
 CORETYPE=cortex-m3
 #--------------------------Thes are a set of #define pass to the compiler , the density you have to google it
@@ -45,14 +28,9 @@ TYPE=STM32F1
 MCU=STM32F103C8Tx
 DENSITY=STM32F10X_MD 
 
-
-
 SOURCES += $(shell ls $(PERIPH)/src/*.c)
 SOURCES += $(shell ls src/*.c)
-SOURCES += startup/startup_stm32.s   
-
-
-
+SOURCES += startup/startup_stm32.s 
 
 OBJECTS = $(addprefix $(BUILDDIR)/, $(addsuffix .o, $(basename $(SOURCES))))
 
@@ -87,15 +65,25 @@ CFLAGS  = -O0 -g -Wall -I.\
 LDSCRIPT = LinkerScript.ld
 LDFLAGS += -T$(LDSCRIPT) -mthumb -mcpu=$(CORETYPE) -mfloat-abi=soft -Wl,-Map=output.map -Wl,--gc-section
 
+RESULT = $(shell ./configure/check_files_and_folder.sh $(SOURCES))
 
 
-# checkflash:
-
-	
-checkcompile: 	
+check:
 	@echo SOURCES "\n"  $(SOURCES) 
 	@echo "\n"
 	@echo INCLUDES "\n" $(INCLUDES) 
+ifeq ($(STLINK_DEVICE),)
+	$(error Please define environment variable STLINK_DEVICE like <busnbr>:<devnbr>  e.g 0483:3748)
+endif
+	@echo STLINK_DEVICE  $(STLINK_DEVICE) 
+ifeq ($(ARM_NONE_EABI_GDB),)    # ifeq has to be in first column ,and be carefule about spaces (on space before the '(' )
+	$(error arm-none-eabi-gdb is not available please install it. e.g. sudo apt-get install arm-none-eabi-gdb)
+endif
+	@echo ARM_NONE_EABI_GDB $(ARM_NONE_EABI_GDB)
+ifeq ($(STFLASH),)
+	$(error "st-flash is not available please install it. Compile from source from https://github.com/texane/stlink")
+endif
+	@echo STFLASH $(STFLASH)
 
 $(BIN): $(ELF)
 	@echo Objet $(OBJCOPY)
@@ -116,7 +104,7 @@ $(BUILDDIR)/%.o: %.s
 	mkdir -p $(dir $@)
 	$(CC) -c $(CFLAGS) $< -o $@
 
-all: checkcompile $(BIN)	
+all: check $(BIN)	
 
 flash: $(BIN)
 	st-flash write $(BIN) 0x8000000
