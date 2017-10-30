@@ -8,13 +8,24 @@ endif
 ifndef STM32F10X_STD_PERIPH_PATH
 	$(error Please define environment variable STM32F10X_STD_PERIPH_PATH)
 endif
+
+STLINK_DEVICE := $(STLINK_DEVICE)
+ifndef STLINK_DEVICE
+	$(error Please define environment variable STLINK_DEVICE)
+endif
 #--------------------------Check excutable 
 STFLASH := $(shell command -v st-flash 2> /dev/null)
 ifndef STFLASH
 	$(error "st-flash is not available please install it. Compile from source from https://github.com/texane/stlink")
 endif
-
-
+OPENOCD := $(shell command -v openocd 2> /dev/null)
+ifndef OPENOCD
+	$(error "openocd is not available please install it. e.g. sudo apt-get install openocd)
+endif
+ARM_NONE_EABI_GDB := $(shell command -v arm-none-eabi-gdb 2>/dev/null)
+ifndef ARM_NONE_EABI_GDB
+	$(error "arm-none-eabi-gdb is not available please install it. e.g. sudo apt-get install arm-none-eabi-gdb)
+endif
 
 
 #--------------------------Define Pathes
