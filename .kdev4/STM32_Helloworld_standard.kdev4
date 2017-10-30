@@ -1,3 +1,6 @@
+[Buildset]
+BuildItems=@Variant(\x00\x00\x00\t\x00\x00\x00\x00\x01\x00\x00\x00\x0b\x00\x00\x00\x00\x01\x00\x00\x002\x00S\x00T\x00M\x003\x002\x00_\x00H\x00e\x00l\x00l\x00o\x00w\x00o\x00r\x00l\x00d\x00_\x00s\x00t\x00a\x00n\x00d\x00a\x00r\x00d)
+
 [CustomDefinesAndIncludes][ProjectPath0]
 Path=.
 parseAmbiguousAsCPP=true
@@ -24,20 +27,23 @@ Type=Native Application
 
 [Launch][Launch Configuration 0][Data]
 Arguments=
-Debugger Shell=file:///home/max/Projects/Projets/STM32_Helloworld_standard/gdbscript.sh
+Debugger Shell=file:///home/max/Projects/Projets/STM32_Helloworld_standard/shell_script.sh
 Dependencies=@Variant(\x00\x00\x00\t\x00\x00\x00\x00\x00)
 Dependency Action=Nothing
 Display Demangle Names=true
 Display Static Members=false
 EnvironmentGroup=
-Executable=file:///home/max/Projects/Projets/STM32_Helloworld_standard
+Executable=file:///home/max/Projects/Projets/STM32_Helloworld_standard/build/program.elf
 External Terminal=konsole --noclose --workdir %workdir -e %exe
-GDB Path=
+GDB Path=file:///usr/bin/arm-none-eabi-gdb
 Project Target=
-Remote GDB Config Script=file:///home/max/gdbinit
+Remote GDB Config Script=
 Remote GDB Run Script=
 Remote GDB Shell Script=
 Start With=GdbConsole
 Use External Terminal=false
 Working Directory=
 isExecutable=true
+
+[Project]
+VersionControlSupport=kdevgit
