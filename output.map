@@ -44,8 +44,8 @@ Discarded input sections
  .debug_abbrev  0x0000000000000000      0x156 build/StdPeriph_Driver/src/misc.o
  .debug_aranges
                 0x0000000000000000       0x20 build/StdPeriph_Driver/src/misc.o
- .debug_line    0x0000000000000000      0x1ca build/StdPeriph_Driver/src/misc.o
- .debug_str     0x0000000000000000      0x3b0 build/StdPeriph_Driver/src/misc.o
+ .debug_line    0x0000000000000000      0x1c8 build/StdPeriph_Driver/src/misc.o
+ .debug_str     0x0000000000000000      0x3af build/StdPeriph_Driver/src/misc.o
  .comment       0x0000000000000000       0x39 build/StdPeriph_Driver/src/misc.o
  .debug_frame   0x0000000000000000       0xd8 build/StdPeriph_Driver/src/misc.o
  .ARM.attributes
@@ -57,8 +57,8 @@ Discarded input sections
  .debug_abbrev  0x0000000000000000      0x19a build/StdPeriph_Driver/src/stm32f10x_adc.o
  .debug_aranges
                 0x0000000000000000       0x20 build/StdPeriph_Driver/src/stm32f10x_adc.o
- .debug_line    0x0000000000000000      0x302 build/StdPeriph_Driver/src/stm32f10x_adc.o
- .debug_str     0x0000000000000000      0x6f3 build/StdPeriph_Driver/src/stm32f10x_adc.o
+ .debug_line    0x0000000000000000      0x300 build/StdPeriph_Driver/src/stm32f10x_adc.o
+ .debug_str     0x0000000000000000      0x6f2 build/StdPeriph_Driver/src/stm32f10x_adc.o
  .comment       0x0000000000000000       0x39 build/StdPeriph_Driver/src/stm32f10x_adc.o
  .debug_frame   0x0000000000000000      0x5a4 build/StdPeriph_Driver/src/stm32f10x_adc.o
  .ARM.attributes
@@ -70,8 +70,8 @@ Discarded input sections
  .debug_abbrev  0x0000000000000000      0x165 build/StdPeriph_Driver/src/stm32f10x_bkp.o
  .debug_aranges
                 0x0000000000000000       0x20 build/StdPeriph_Driver/src/stm32f10x_bkp.o
- .debug_line    0x0000000000000000      0x1cb build/StdPeriph_Driver/src/stm32f10x_bkp.o
- .debug_str     0x0000000000000000      0x5ad build/StdPeriph_Driver/src/stm32f10x_bkp.o
+ .debug_line    0x0000000000000000      0x1ca build/StdPeriph_Driver/src/stm32f10x_bkp.o
+ .debug_str     0x0000000000000000      0x5ac build/StdPeriph_Driver/src/stm32f10x_bkp.o
  .comment       0x0000000000000000       0x39 build/StdPeriph_Driver/src/stm32f10x_bkp.o
  .debug_frame   0x0000000000000000      0x1c4 build/StdPeriph_Driver/src/stm32f10x_bkp.o
  .ARM.attributes
@@ -83,8 +83,8 @@ Discarded input sections
  .debug_abbrev  0x0000000000000000      0x1f5 build/StdPeriph_Driver/src/stm32f10x_can.o
  .debug_aranges
                 0x0000000000000000       0x20 build/StdPeriph_Driver/src/stm32f10x_can.o
- .debug_line    0x0000000000000000      0x3d6 build/StdPeriph_Driver/src/stm32f10x_can.o
- .debug_str     0x0000000000000000      0x726 build/StdPeriph_Driver/src/stm32f10x_can.o
+ .debug_line    0x0000000000000000      0x3d4 build/StdPeriph_Driver/src/stm32f10x_can.o
+ .debug_str     0x0000000000000000      0x725 build/StdPeriph_Driver/src/stm32f10x_can.o
  .comment       0x0000000000000000       0x39 build/StdPeriph_Driver/src/stm32f10x_can.o
  .debug_frame   0x0000000000000000      0x3f0 build/StdPeriph_Driver/src/stm32f10x_can.o
  .ARM.attributes
@@ -96,8 +96,8 @@ Discarded input sections
  .debug_abbrev  0x0000000000000000      0x1b0 build/StdPeriph_Driver/src/stm32f10x_cec.o
  .debug_aranges
                 0x0000000000000000       0x20 build/StdPeriph_Driver/src/stm32f10x_cec.o
- .debug_line    0x0000000000000000      0x21a build/StdPeriph_Driver/src/stm32f10x_cec.o
- .debug_str     0x0000000000000000      0x36e build/StdPeriph_Driver/src/stm32f10x_cec.o
+ .debug_line    0x0000000000000000      0x218 build/StdPeriph_Driver/src/stm32f10x_cec.o
+ .debug_str     0x0000000000000000      0x36d build/StdPeriph_Driver/src/stm32f10x_cec.o
  .comment       0x0000000000000000       0x39 build/StdPeriph_Driver/src/stm32f10x_cec.o
  .debug_frame   0x0000000000000000      0x224 build/StdPeriph_Driver/src/stm32f10x_cec.o
  .ARM.attributes
@@ -109,8 +109,8 @@ Discarded input sections
  .debug_abbrev  0x0000000000000000      0x116 build/StdPeriph_Driver/src/stm32f10x_crc.o
  .debug_aranges
                 0x0000000000000000       0x20 build/StdPeriph_Driver/src/stm32f10x_crc.o
- .debug_line    0x0000000000000000      0x1b2 build/StdPeriph_Driver/src/stm32f10x_crc.o
- .debug_str     0x0000000000000000      0x233 build/StdPeriph_Driver/src/stm32f10x_crc.o
+ .debug_line    0x0000000000000000      0x1b1 build/StdPeriph_Driver/src/stm32f10x_crc.o
+ .debug_str     0x0000000000000000      0x232 build/StdPeriph_Driver/src/stm32f10x_crc.o
  .comment       0x0000000000000000       0x39 build/StdPeriph_Driver/src/stm32f10x_crc.o
  .debug_frame   0x0000000000000000       0xe8 build/StdPeriph_Driver/src/stm32f10x_crc.o
  .ARM.attributes
@@ -122,8 +122,8 @@ Discarded input sections
  .debug_abbrev  0x0000000000000000      0x175 build/StdPeriph_Driver/src/stm32f10x_dac.o
  .debug_aranges
                 0x0000000000000000       0x20 build/StdPeriph_Driver/src/stm32f10x_dac.o
- .debug_line    0x0000000000000000      0x213 build/StdPeriph_Driver/src/stm32f10x_dac.o
- .debug_str     0x0000000000000000      0x3a7 build/StdPeriph_Driver/src/stm32f10x_dac.o
+ .debug_line    0x0000000000000000      0x211 build/StdPeriph_Driver/src/stm32f10x_dac.o
+ .debug_str     0x0000000000000000      0x3a6 build/StdPeriph_Driver/src/stm32f10x_dac.o
  .comment       0x0000000000000000       0x39 build/StdPeriph_Driver/src/stm32f10x_dac.o
  .debug_frame   0x0000000000000000      0x1e4 build/StdPeriph_Driver/src/stm32f10x_dac.o
  .ARM.attributes
@@ -135,8 +135,8 @@ Discarded input sections
  .debug_abbrev  0x0000000000000000       0xe0 build/StdPeriph_Driver/src/stm32f10x_dbgmcu.o
  .debug_aranges
                 0x0000000000000000       0x20 build/StdPeriph_Driver/src/stm32f10x_dbgmcu.o
- .debug_line    0x0000000000000000      0x19a build/StdPeriph_Driver/src/stm32f10x_dbgmcu.o
- .debug_str     0x0000000000000000      0x1ea build/StdPeriph_Driver/src/stm32f10x_dbgmcu.o
+ .debug_line    0x0000000000000000      0x199 build/StdPeriph_Driver/src/stm32f10x_dbgmcu.o
+ .debug_str     0x0000000000000000      0x1e9 build/StdPeriph_Driver/src/stm32f10x_dbgmcu.o
  .comment       0x0000000000000000       0x39 build/StdPeriph_Driver/src/stm32f10x_dbgmcu.o
  .debug_frame   0x0000000000000000       0x78 build/StdPeriph_Driver/src/stm32f10x_dbgmcu.o
  .ARM.attributes
@@ -148,8 +148,8 @@ Discarded input sections
  .debug_abbrev  0x0000000000000000      0x157 build/StdPeriph_Driver/src/stm32f10x_dma.o
  .debug_aranges
                 0x0000000000000000       0x20 build/StdPeriph_Driver/src/stm32f10x_dma.o
- .debug_line    0x0000000000000000      0x23d build/StdPeriph_Driver/src/stm32f10x_dma.o
- .debug_str     0x0000000000000000      0x3af build/StdPeriph_Driver/src/stm32f10x_dma.o
+ .debug_line    0x0000000000000000      0x23b build/StdPeriph_Driver/src/stm32f10x_dma.o
+ .debug_str     0x0000000000000000      0x3ae build/StdPeriph_Driver/src/stm32f10x_dma.o
  .comment       0x0000000000000000       0x39 build/StdPeriph_Driver/src/stm32f10x_dma.o
  .debug_frame   0x0000000000000000      0x1c8 build/StdPeriph_Driver/src/stm32f10x_dma.o
  .ARM.attributes
@@ -161,8 +161,8 @@ Discarded input sections
  .debug_abbrev  0x0000000000000000      0x153 build/StdPeriph_Driver/src/stm32f10x_exti.o
  .debug_aranges
                 0x0000000000000000       0x20 build/StdPeriph_Driver/src/stm32f10x_exti.o
- .debug_line    0x0000000000000000      0x203 build/StdPeriph_Driver/src/stm32f10x_exti.o
- .debug_str     0x0000000000000000      0x341 build/StdPeriph_Driver/src/stm32f10x_exti.o
+ .debug_line    0x0000000000000000      0x201 build/StdPeriph_Driver/src/stm32f10x_exti.o
+ .debug_str     0x0000000000000000      0x340 build/StdPeriph_Driver/src/stm32f10x_exti.o
  .comment       0x0000000000000000       0x39 build/StdPeriph_Driver/src/stm32f10x_exti.o
  .debug_frame   0x0000000000000000      0x148 build/StdPeriph_Driver/src/stm32f10x_exti.o
  .ARM.attributes
@@ -174,8 +174,8 @@ Discarded input sections
  .debug_abbrev  0x0000000000000000      0x18d build/StdPeriph_Driver/src/stm32f10x_flash.o
  .debug_aranges
                 0x0000000000000000       0x20 build/StdPeriph_Driver/src/stm32f10x_flash.o
- .debug_line    0x0000000000000000      0x32d build/StdPeriph_Driver/src/stm32f10x_flash.o
- .debug_str     0x0000000000000000      0x5e0 build/StdPeriph_Driver/src/stm32f10x_flash.o
+ .debug_line    0x0000000000000000      0x32b build/StdPeriph_Driver/src/stm32f10x_flash.o
+ .debug_str     0x0000000000000000      0x5df build/StdPeriph_Driver/src/stm32f10x_flash.o
  .comment       0x0000000000000000       0x39 build/StdPeriph_Driver/src/stm32f10x_flash.o
  .debug_frame   0x0000000000000000      0x410 build/StdPeriph_Driver/src/stm32f10x_flash.o
  .ARM.attributes
@@ -187,8 +187,8 @@ Discarded input sections
  .debug_abbrev  0x0000000000000000      0x172 build/StdPeriph_Driver/src/stm32f10x_fsmc.o
  .debug_aranges
                 0x0000000000000000       0x20 build/StdPeriph_Driver/src/stm32f10x_fsmc.o
- .debug_line    0x0000000000000000      0x321 build/StdPeriph_Driver/src/stm32f10x_fsmc.o
- .debug_str     0x0000000000000000      0x772 build/StdPeriph_Driver/src/stm32f10x_fsmc.o
+ .debug_line    0x0000000000000000      0x31f build/StdPeriph_Driver/src/stm32f10x_fsmc.o
+ .debug_str     0x0000000000000000      0x771 build/StdPeriph_Driver/src/stm32f10x_fsmc.o
  .comment       0x0000000000000000       0x39 build/StdPeriph_Driver/src/stm32f10x_fsmc.o
  .debug_frame   0x0000000000000000      0x300 build/StdPeriph_Driver/src/stm32f10x_fsmc.o
  .ARM.attributes
@@ -202,8 +202,8 @@ Discarded input sections
  .debug_abbrev  0x0000000000000000      0x166 build/StdPeriph_Driver/src/stm32f10x_i2c.o
  .debug_aranges
                 0x0000000000000000       0x20 build/StdPeriph_Driver/src/stm32f10x_i2c.o
- .debug_line    0x0000000000000000      0x2eb build/StdPeriph_Driver/src/stm32f10x_i2c.o
- .debug_str     0x0000000000000000      0x65e build/StdPeriph_Driver/src/stm32f10x_i2c.o
+ .debug_line    0x0000000000000000      0x2e9 build/StdPeriph_Driver/src/stm32f10x_i2c.o
+ .debug_str     0x0000000000000000      0x65d build/StdPeriph_Driver/src/stm32f10x_i2c.o
  .comment       0x0000000000000000       0x39 build/StdPeriph_Driver/src/stm32f10x_i2c.o
  .debug_frame   0x0000000000000000      0x530 build/StdPeriph_Driver/src/stm32f10x_i2c.o
  .ARM.attributes
@@ -215,8 +215,8 @@ Discarded input sections
  .debug_abbrev  0x0000000000000000      0x103 build/StdPeriph_Driver/src/stm32f10x_iwdg.o
  .debug_aranges
                 0x0000000000000000       0x20 build/StdPeriph_Driver/src/stm32f10x_iwdg.o
- .debug_line    0x0000000000000000      0x1a9 build/StdPeriph_Driver/src/stm32f10x_iwdg.o
- .debug_str     0x0000000000000000      0x254 build/StdPeriph_Driver/src/stm32f10x_iwdg.o
+ .debug_line    0x0000000000000000      0x1a8 build/StdPeriph_Driver/src/stm32f10x_iwdg.o
+ .debug_str     0x0000000000000000      0x253 build/StdPeriph_Driver/src/stm32f10x_iwdg.o
  .comment       0x0000000000000000       0x39 build/StdPeriph_Driver/src/stm32f10x_iwdg.o
  .debug_frame   0x0000000000000000       0xf0 build/StdPeriph_Driver/src/stm32f10x_iwdg.o
  .ARM.attributes
@@ -228,8 +228,8 @@ Discarded input sections
  .debug_abbrev  0x0000000000000000      0x1ad build/StdPeriph_Driver/src/stm32f10x_pwr.o
  .debug_aranges
                 0x0000000000000000       0x20 build/StdPeriph_Driver/src/stm32f10x_pwr.o
- .debug_line    0x0000000000000000      0x1d1 build/StdPeriph_Driver/src/stm32f10x_pwr.o
- .debug_str     0x0000000000000000      0x30a build/StdPeriph_Driver/src/stm32f10x_pwr.o
+ .debug_line    0x0000000000000000      0x1d0 build/StdPeriph_Driver/src/stm32f10x_pwr.o
+ .debug_str     0x0000000000000000      0x309 build/StdPeriph_Driver/src/stm32f10x_pwr.o
  .comment       0x0000000000000000       0x39 build/StdPeriph_Driver/src/stm32f10x_pwr.o
  .debug_frame   0x0000000000000000      0x19c build/StdPeriph_Driver/src/stm32f10x_pwr.o
  .ARM.attributes
@@ -242,8 +242,8 @@ Discarded input sections
  .debug_abbrev  0x0000000000000000      0x18f build/StdPeriph_Driver/src/stm32f10x_rtc.o
  .debug_aranges
                 0x0000000000000000       0x20 build/StdPeriph_Driver/src/stm32f10x_rtc.o
- .debug_line    0x0000000000000000      0x1ef build/StdPeriph_Driver/src/stm32f10x_rtc.o
- .debug_str     0x0000000000000000      0x39a build/StdPeriph_Driver/src/stm32f10x_rtc.o
+ .debug_line    0x0000000000000000      0x1ee build/StdPeriph_Driver/src/stm32f10x_rtc.o
+ .debug_str     0x0000000000000000      0x399 build/StdPeriph_Driver/src/stm32f10x_rtc.o
  .comment       0x0000000000000000       0x39 build/StdPeriph_Driver/src/stm32f10x_rtc.o
  .debug_frame   0x0000000000000000      0x214 build/StdPeriph_Driver/src/stm32f10x_rtc.o
  .ARM.attributes
@@ -255,8 +255,8 @@ Discarded input sections
  .debug_abbrev  0x0000000000000000      0x1b1 build/StdPeriph_Driver/src/stm32f10x_sdio.o
  .debug_aranges
                 0x0000000000000000       0x20 build/StdPeriph_Driver/src/stm32f10x_sdio.o
- .debug_line    0x0000000000000000      0x27c build/StdPeriph_Driver/src/stm32f10x_sdio.o
- .debug_str     0x0000000000000000      0x628 build/StdPeriph_Driver/src/stm32f10x_sdio.o
+ .debug_line    0x0000000000000000      0x27a build/StdPeriph_Driver/src/stm32f10x_sdio.o
+ .debug_str     0x0000000000000000      0x627 build/StdPeriph_Driver/src/stm32f10x_sdio.o
  .comment       0x0000000000000000       0x39 build/StdPeriph_Driver/src/stm32f10x_sdio.o
  .debug_frame   0x0000000000000000      0x490 build/StdPeriph_Driver/src/stm32f10x_sdio.o
  .ARM.attributes
@@ -268,8 +268,8 @@ Discarded input sections
  .debug_abbrev  0x0000000000000000      0x180 build/StdPeriph_Driver/src/stm32f10x_spi.o
  .debug_aranges
                 0x0000000000000000       0x20 build/StdPeriph_Driver/src/stm32f10x_spi.o
- .debug_line    0x0000000000000000      0x2b5 build/StdPeriph_Driver/src/stm32f10x_spi.o
- .debug_str     0x0000000000000000      0x5f5 build/StdPeriph_Driver/src/stm32f10x_spi.o
+ .debug_line    0x0000000000000000      0x2b3 build/StdPeriph_Driver/src/stm32f10x_spi.o
+ .debug_str     0x0000000000000000      0x5f4 build/StdPeriph_Driver/src/stm32f10x_spi.o
  .comment       0x0000000000000000       0x39 build/StdPeriph_Driver/src/stm32f10x_spi.o
  .debug_frame   0x0000000000000000      0x3a0 build/StdPeriph_Driver/src/stm32f10x_spi.o
  .ARM.attributes
@@ -281,8 +281,8 @@ Discarded input sections
  .debug_abbrev  0x0000000000000000      0x1b2 build/StdPeriph_Driver/src/stm32f10x_tim.o
  .debug_aranges
                 0x0000000000000000       0x20 build/StdPeriph_Driver/src/stm32f10x_tim.o
- .debug_line    0x0000000000000000      0x5fd build/StdPeriph_Driver/src/stm32f10x_tim.o
- .debug_str     0x0000000000000000      0xdd5 build/StdPeriph_Driver/src/stm32f10x_tim.o
+ .debug_line    0x0000000000000000      0x5fb build/StdPeriph_Driver/src/stm32f10x_tim.o
+ .debug_str     0x0000000000000000      0xdd4 build/StdPeriph_Driver/src/stm32f10x_tim.o
  .comment       0x0000000000000000       0x39 build/StdPeriph_Driver/src/stm32f10x_tim.o
  .debug_frame   0x0000000000000000      0xe2c build/StdPeriph_Driver/src/stm32f10x_tim.o
  .ARM.attributes
@@ -294,8 +294,8 @@ Discarded input sections
  .debug_abbrev  0x0000000000000000      0x164 build/StdPeriph_Driver/src/stm32f10x_usart.o
  .debug_aranges
                 0x0000000000000000       0x20 build/StdPeriph_Driver/src/stm32f10x_usart.o
- .debug_line    0x0000000000000000      0x2e7 build/StdPeriph_Driver/src/stm32f10x_usart.o
- .debug_str     0x0000000000000000      0x688 build/StdPeriph_Driver/src/stm32f10x_usart.o
+ .debug_line    0x0000000000000000      0x2e5 build/StdPeriph_Driver/src/stm32f10x_usart.o
+ .debug_str     0x0000000000000000      0x687 build/StdPeriph_Driver/src/stm32f10x_usart.o
  .comment       0x0000000000000000       0x39 build/StdPeriph_Driver/src/stm32f10x_usart.o
  .debug_frame   0x0000000000000000      0x490 build/StdPeriph_Driver/src/stm32f10x_usart.o
  .ARM.attributes
@@ -307,8 +307,8 @@ Discarded input sections
  .debug_abbrev  0x0000000000000000      0x119 build/StdPeriph_Driver/src/stm32f10x_wwdg.o
  .debug_aranges
                 0x0000000000000000       0x20 build/StdPeriph_Driver/src/stm32f10x_wwdg.o
- .debug_line    0x0000000000000000      0x1b2 build/StdPeriph_Driver/src/stm32f10x_wwdg.o
- .debug_str     0x0000000000000000      0x255 build/StdPeriph_Driver/src/stm32f10x_wwdg.o
+ .debug_line    0x0000000000000000      0x1b1 build/StdPeriph_Driver/src/stm32f10x_wwdg.o
+ .debug_str     0x0000000000000000      0x254 build/StdPeriph_Driver/src/stm32f10x_wwdg.o
  .comment       0x0000000000000000       0x39 build/StdPeriph_Driver/src/stm32f10x_wwdg.o
  .debug_frame   0x0000000000000000      0x12c build/StdPeriph_Driver/src/stm32f10x_wwdg.o
  .ARM.attributes
@@ -808,42 +808,42 @@ OUTPUT(build/program.elf elf32-littlearm)
  .debug_aranges
                 0x0000000000000160       0x28 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-__call_atexit.o)
 
-.debug_line     0x0000000000000000     0x11b3
- .debug_line    0x0000000000000000      0x290 build/StdPeriph_Driver/src/stm32f10x_gpio.o
- .debug_line    0x0000000000000290      0x2eb build/StdPeriph_Driver/src/stm32f10x_rcc.o
- .debug_line    0x000000000000057b      0x1ba build/src/delay.o
- .debug_line    0x0000000000000735      0x1b9 build/src/main.o
- .debug_line    0x00000000000008ee      0x1ea build/src/system_stm32f10x.o
- .debug_line    0x0000000000000ad8       0x76 build/startup/startup_stm32.o
- .debug_line    0x0000000000000b4e       0xc1 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-atexit.o)
- .debug_line    0x0000000000000c0f       0x9c /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-fini.o)
- .debug_line    0x0000000000000cab       0xf1 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-impure.o)
- .debug_line    0x0000000000000d9c       0xb6 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-init.o)
- .debug_line    0x0000000000000e52      0x19c /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-__atexit.o)
- .debug_line    0x0000000000000fee      0x1c5 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-__call_atexit.o)
+.debug_line     0x0000000000000000     0x11af
+ .debug_line    0x0000000000000000      0x28e build/StdPeriph_Driver/src/stm32f10x_gpio.o
+ .debug_line    0x000000000000028e      0x2e9 build/StdPeriph_Driver/src/stm32f10x_rcc.o
+ .debug_line    0x0000000000000577      0x1ba build/src/delay.o
+ .debug_line    0x0000000000000731      0x1b9 build/src/main.o
+ .debug_line    0x00000000000008ea      0x1ea build/src/system_stm32f10x.o
+ .debug_line    0x0000000000000ad4       0x76 build/startup/startup_stm32.o
+ .debug_line    0x0000000000000b4a       0xc1 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-atexit.o)
+ .debug_line    0x0000000000000c0b       0x9c /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-fini.o)
+ .debug_line    0x0000000000000ca7       0xf1 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-impure.o)
+ .debug_line    0x0000000000000d98       0xb6 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-init.o)
+ .debug_line    0x0000000000000e4e      0x19c /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-__atexit.o)
+ .debug_line    0x0000000000000fea      0x1c5 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-__call_atexit.o)
 
-.debug_str      0x0000000000000000     0x1568
- .debug_str     0x0000000000000000      0x4c3 build/StdPeriph_Driver/src/stm32f10x_gpio.o
-                                        0x511 (size before relaxing)
- .debug_str     0x00000000000004c3      0x437 build/StdPeriph_Driver/src/stm32f10x_rcc.o
-                                        0x612 (size before relaxing)
- .debug_str     0x00000000000008fa      0x410 build/src/delay.o
+.debug_str      0x0000000000000000     0x1566
+ .debug_str     0x0000000000000000      0x4c2 build/StdPeriph_Driver/src/stm32f10x_gpio.o
+                                        0x510 (size before relaxing)
+ .debug_str     0x00000000000004c2      0x436 build/StdPeriph_Driver/src/stm32f10x_rcc.o
+                                        0x611 (size before relaxing)
+ .debug_str     0x00000000000008f8      0x410 build/src/delay.o
                                         0x578 (size before relaxing)
- .debug_str     0x0000000000000d0a       0x32 build/src/main.o
+ .debug_str     0x0000000000000d08       0x32 build/src/main.o
                                         0x2b9 (size before relaxing)
- .debug_str     0x0000000000000d3c       0x78 build/src/system_stm32f10x.o
+ .debug_str     0x0000000000000d3a       0x78 build/src/system_stm32f10x.o
                                         0x2c6 (size before relaxing)
- .debug_str     0x0000000000000db4      0x15f /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-atexit.o)
+ .debug_str     0x0000000000000db2      0x15f /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-atexit.o)
                                         0x1f8 (size before relaxing)
- .debug_str     0x0000000000000f13       0xca /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-fini.o)
+ .debug_str     0x0000000000000f11       0xca /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-fini.o)
                                         0x1f0 (size before relaxing)
- .debug_str     0x0000000000000fdd      0x445 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-impure.o)
+ .debug_str     0x0000000000000fdb      0x445 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-impure.o)
                                         0x58c (size before relaxing)
- .debug_str     0x0000000000001422       0x90 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-init.o)
+ .debug_str     0x0000000000001420       0x90 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-init.o)
                                         0x21a (size before relaxing)
- .debug_str     0x00000000000014b2       0x30 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-__atexit.o)
+ .debug_str     0x00000000000014b0       0x30 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-__atexit.o)
                                         0x5d4 (size before relaxing)
- .debug_str     0x00000000000014e2       0x86 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-__call_atexit.o)
+ .debug_str     0x00000000000014e0       0x86 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-__call_atexit.o)
                                         0x5ec (size before relaxing)
 
 .debug_frame    0x0000000000000000      0xa94
