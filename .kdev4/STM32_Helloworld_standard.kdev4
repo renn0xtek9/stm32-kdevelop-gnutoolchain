@@ -15,6 +15,7 @@ Name=Clang
 2=/home/max/Projects/Projets/STM32_Helloworld_standard/CMSIS/device/
 3=/home/max/Projects/Projets/STM32_Helloworld_standard/inc/
 4=/home/max/Projects/Projets/STM32_Helloworld_standard/StdPeriph_Driver/inc/
+5=/home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32_USB-FS-Device_Driver/inc/
 
 [Launch]
 Launch Configurations=Launch Configuration 0
@@ -44,6 +45,9 @@ Start With=GdbConsole
 Use External Terminal=false
 Working Directory=
 isExecutable=true
+
+[MakeBuilder]
+Default Target=all
 
 [Project]
 VersionControlSupport=kdevgit

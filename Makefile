@@ -6,6 +6,7 @@ PERIPH=StdPeriph_Driver
 BUILDDIR = build
 CORETYPE=cortex-m3
 #--------------------------Thes are a set of #define pass to the compiler , the density you have to google it
+USING_USB=YES
 ARCHI=STM32
 TYPE=STM32F1 
 MCU=STM32F103C8Tx
@@ -18,8 +19,12 @@ SOURCES += startup/startup_stm32.s
 INCLUDES += -I$(DEVICE)/ \
 			-I$(CORE)/ \
 			-I$(PERIPH)/inc \
-			-I$(STM32F10X_USB_PERIPH_PATH)/Libraries/STM32_USB-FS-Device_Driver/inc \
 			-Iinc
+ifeq ($(USING_USB),YES) 
+	INCLUDES+= -I$(STM32F10X_USB_PERIPH_PATH)/Libraries/STM32_USB-FS-Device_Driver/inc 
+	SOURCES+= $(shell ls $(STM32F10X_USB_PERIPH_PATH)/Libraries/STM32_USB-FS-Device_Driver/src/*.c)
+endif
+		
 			
 DEFINES += -D$(ARCHI)\
 	-D$(TYPE)\

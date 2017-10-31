@@ -11,6 +11,9 @@
 #include "stm32f10x_rcc.h"
 #include "stm32f10x.h"
 #include "delay.h"
+#include "usb_lib.h"
+#include "usb_desc.h"
+#include "usb_pwr.h"
 	
 void InitInputOutput()
 {
@@ -24,6 +27,7 @@ int main(void)
 {
 	InitInputOutput();
 	DelayInit();
+	Set_USBClock();
 	for(;;)
 	{
 		GPIO_SetBits(GPIOA,GPIO_Pin_5);
