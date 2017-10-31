@@ -14,7 +14,7 @@
 #include "usb_lib.h"
 #include "usb_desc.h"
 #include "usb_pwr.h"
-	
+#include "hw_config.h"
 void InitInputOutput()
 {
 	RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOA, ENABLE);					//Initilize clock of port A
@@ -25,9 +25,11 @@ void InitInputOutput()
 
 int main(void)
 {
-	InitInputOutput();
-	DelayInit();
+// 	InitInputOutput();
+// 	DelayInit();
 	Set_USBClock();
+	USB_Interrupts_Config();
+	USB_Init();
 	for(;;)
 	{
 		GPIO_SetBits(GPIOA,GPIO_Pin_5);
