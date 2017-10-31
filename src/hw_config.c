@@ -98,6 +98,12 @@ void Set_System(void)
 
 #else /* defined(STM32F10X_HD) || defined(STM32F10X_MD) defined(STM32F10X_XL)*/
   RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOA, ENABLE);
+  //Place you code here ? 
+  	GPIO_InitTypeDef gpioa_init_struct={GPIO_Pin_5,GPIO_Speed_50MHz,GPIO_Mode_Out_PP};  	//Define the port a init structure
+	GPIO_Init(GPIOA,&gpioa_init_struct);							// Initialize it
+	GPIO_SetBits(GPIOA,GPIO_Pin_5);	
+  
+  
 #endif
   
   /********************************************/
