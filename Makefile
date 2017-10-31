@@ -56,6 +56,9 @@ STFLASH := $(shell command -v st-flash 2> /dev/null)
 ARM_NONE_EABI_GDB := $(shell command -v arm-none-eabi-gdb 2>/dev/null)
 
 
+configure: check
+	./configure/copy_startup_file.sh $(STM32F10X_USB_PERIPH_PATH) $(DENSITY)
+
 check:
 	@echo SOURCES "\n"  $(SOURCES) 
 	@echo "\n"
@@ -106,7 +109,7 @@ $(BUILDDIR)/%.o: %.s
 all: check $(BIN)	
 
 flash: $(BIN)
-	st-flash write $(BIN) 0x8000000
+	sudo st-flash write $(BIN) 0x8000000
 
 clean:
 	rm -rf build
