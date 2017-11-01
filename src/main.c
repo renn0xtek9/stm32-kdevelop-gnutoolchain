@@ -6,7 +6,7 @@
 #include "delay.h"
 #include "irsnd.h"	
 	
-// #include "irmp.h"
+//-------------------------------------This bit is directly tooked form irmp library examples
 #include "irsnd.h"
 
 #ifndef F_CPU
@@ -53,9 +53,7 @@ TIM2_IRQHandler(void)                                                       // T
   (void) irsnd_ISR();
   // call other timer interrupt routines...
 }
-	
-	
-	
+//-------------------------------------END OF STEALING IRMP LIBRARY CODE ;)
 void InitInputOutput()
 {
 	RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOA, ENABLE);					//Initilize clock of port A
@@ -63,27 +61,32 @@ void InitInputOutput()
 	GPIO_Init(GPIOA,&gpioa_init_struct);							// Initialize it
 	GPIO_SetBits(GPIOA,GPIO_Pin_5);	
 }
-
 int main(void)
 {
 	InitInputOutput();
 	DelayInit();
 	IRMP_DATA irmp_data;
+	irsnd_init();
 	timer2_init();
-
+	uint16_t command=0x0;
 	for(;;)
 	{
-		GPIO_SetBits(GPIOA,GPIO_Pin_5);
-		DelayMs(2000);
-		GPIO_ResetBits(GPIOA,GPIO_Pin_5);
-		DelayMs(1000);
-		
-		irmp_data.protocol = IRMP_RC5_PROTOCOL;                             // use NEC protocol
-		irmp_data.address  = 0x00FF;                                        // set address to 0x00FF
-		irmp_data.command  = 0x0001;                                        // set command to 0x0001
-		irmp_data.flags    = 0;                                             // don't repeat frame
+		//Here as an example we bomb the Device with command from 0 to 54 every half a second on address 16
+		while (command<54)
+		{
+			irmp_data.protocol = IRMP_RC5_PROTOCOL;			// use RC5 protocol (typical of e.g. Philips)
+			irmp_data.address  = 16;				// set address 16
+			irmp_data.command  = command;				// set command to 0x0001
+			irmp_data.flags    = 0;					// don't repeat frame
 
-		irsnd_send_data (&irmp_data, TRUE);           	
+			irsnd_send_data (&irmp_data, TRUE);           	
+			command++;
+// 			After each command blink a LED on A5 to "see it"
+			GPIO_SetBits(GPIOA,GPIO_Pin_5);
+			DelayMs(250);
+			GPIO_ResetBits(GPIOA,GPIO_Pin_5);
+			DelayMs(250);
+		}
 		
 	}
 }
