@@ -1,31 +1,36 @@
-#--------------------------Define Pathes
-# TODO here under in device and CORE you might want to change CM3 if not using cortex M3
-DEVICE = $(STM32F10X_STD_PERIPH_PATH)/Libraries/CMSIS/CM3/DeviceSupport/ST/STM32F10x
-CORE = $(STM32F10X_STD_PERIPH_PATH)/Libraries/CMSIS/CM3/CoreSupport
-PERIPH=StdPeriph_Driver
-BUILDDIR = build
-CORETYPE=cortex-m3
 #--------------------------Thes are a set of #define pass to the compiler , the density you have to google it
-USING_USB=YES
 ARCHI=STM32
-TYPE=STM32F1 
+#The Familiy is meant to be the prefix of "_StdPeriph" when you ls $STM32_STDLIBV_4_1/Librairies/ WARNING be careful to not have trailing space at end of foolowing line
+FAMILY=STM32F10x
+TYPE=STM32F1
 MCU=STM32F103C8Tx
 DENSITY=STM32F10X_MD 
+#--------------------------Define Pathes
+# TODO here under in device and CORE you might want to change CM3 if not using cortex M3
+DEVICE = $(STM32_STDLIBV_4_1)/Libraries/CMSIS/Device/ST/$(FAMILY)
+CORE = $(STM32_STDLIBV_4_1)/Libraries/CMSIS/Include
+PERIPH=$(STM32_STDLIBV_4_1)/Libraries/$(FAMILY)_StdPeriph_Driver
+USING_USB=YES
+
+
+
+
+BUILDDIR = build
+CORETYPE=cortex-m3
+#--------------------------Define sources 
 SOURCES += $(shell ls $(PERIPH)/src/*.c)
 SOURCES += $(shell ls src/*.c)
 SOURCES += startup/startup_stm32.s 
-
-
-INCLUDES += -I$(DEVICE)/ \
+#--------------------------Include
+INCLUDES += -I$(DEVICE)/Include/ \
 			-I$(CORE)/ \
 			-I$(PERIPH)/inc \
 			-Iinc
 ifeq ($(USING_USB),YES) 
-	INCLUDES+= -I$(STM32F10X_USB_PERIPH_PATH)/Libraries/STM32_USB-FS-Device_Driver/inc 
-	SOURCES+= $(shell ls $(STM32F10X_USB_PERIPH_PATH)/Libraries/STM32_USB-FS-Device_Driver/src/*.c)
+	INCLUDES+= -I$(STM32_STDLIBV_4_1)/Libraries/STM32_USB-FS-Device_Driver/inc 
+	SOURCES+= $(shell ls $(STM32_STDLIBV_4_1)/Libraries/STM32_USB-FS-Device_Driver/src/*.c)
 endif
-		
-			
+#--------------------------Compiler defines !
 DEFINES += -D$(ARCHI)\
 	-D$(TYPE)\
 	-D$(DENSITY)\
@@ -61,8 +66,9 @@ STFLASH := $(shell command -v st-flash 2> /dev/null)
 ARM_NONE_EABI_GDB := $(shell command -v arm-none-eabi-gdb 2>/dev/null)
 
 
-configure: check
-	./configure/copy_startup_file.sh $(STM32F10X_USB_PERIPH_PATH) $(DENSITY)
+configure:
+	./configscripts/copy_startup_file.sh $(STM32_STDLIBV_4_1) $(DENSITY) $(FAMILY)
+
 
 check:
 	@echo SOURCES "\n"  $(SOURCES) 
@@ -80,17 +86,12 @@ ifeq ($(STFLASH),)
 	$(error "st-flash is not available please install it. Compile from source from https://github.com/texane/stlink")
 endif
 	@echo STFLASH $(STFLASH)
-ifeq ($(STM32F10X_USB_PERIPH_PATH),)				# TODO remove this since we don't need it in simplest hello world
-	$(error Please define environment variable STM32F10X_USB_PERIPH_PATH)
+ifeq ($(STM32_STDLIBV_4_1),)				# TODO remove this since we don't need it in simplest hello world
+	$(error Please define environment variable STM32_STDLIBV_4_1)
 endif
-	@echo STM32F10X_USB_PERIPH_PATH $(STM32F10X_USB_PERIPH_PATH)
-ifeq ($(STM32F10X_STD_PERIPH_PATH),)
-	$(error Please define environment variable STM32F10X_STD_PERIPH_PATH)
-endif	
-	@echo STM32F10X_STD_PERIPH_PATH $(STM32F10X_STD_PERIPH_PATH)
+	@echo STM32_STDLIBV_4_1 $(STM32_STDLIBV_4_1)
 # 	Check wether all files are here
-	./configure/check_files_and_folder.sh $(SOURCES)
-# 	Check wether all includes are here
+	./configscripts/check_files_and_folder.sh $(SOURCES)
 	
 $(BIN): $(ELF)
 	@echo Objet $(OBJCOPY)
