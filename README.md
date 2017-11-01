@@ -20,8 +20,31 @@ You will need following program
 
 ## How-to 
 Those helloworld program are meant to work out of the box. Bear in mind however the current state of the project is very pre-pre-pre alpha. Also their might be things to change if you e.g. use a different MCU.
-Prior to compilation you will need to edit a bit the Makefile. Check especially the few first lines to see if it correspond to you architecture. If not you will have to tune a bit the make file
+Prior to compilation you will need to edit a bit the Makefile to fit your configuration. Especially the following item
+* ARCHI
+* FAMILY
+* TYPE
+* MCU
+* DENSITY
 
+Once done you need to set up two environement variable. If you want to be able to make from KDevelop (using *CTRL+F8*) you need to 
+1 Project
+2 Open Configuration
+3 Make tab
+4 Default make target: all
+5 Active environement profile click on the tool and add those two variables following variable
+
+```
+STLINK_DEVICE=0483:3748
+STM32_STDLIBV_4_1=/home/kimjong-un/WorldDomination/STM32_USB-FS-Device_Lib_V4.1.0
+```
+The first one is simply the vendor id and product id of the st-link (the programmer you use to flash). You get those number with 
+```
+lsusb
+```
+The second one is simplyt the path to the version 4.1 of the standard peripheral library. You get it from ST's website.
+
+Once it its done you just can
 ```
 make configure 
 make all
