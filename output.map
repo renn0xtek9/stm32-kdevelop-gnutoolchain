@@ -37,282 +37,282 @@ Discarded input sections
                 0x0000000000000000       0x20 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7-m/crt0.o
  .ARM.attributes
                 0x0000000000000000       0x1b /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7-m/crt0.o
- .text          0x0000000000000000      0x18c build/StdPeriph_Driver/src/misc.o
- .data          0x0000000000000000        0x0 build/StdPeriph_Driver/src/misc.o
- .bss           0x0000000000000000        0x0 build/StdPeriph_Driver/src/misc.o
- .debug_info    0x0000000000000000      0x4ed build/StdPeriph_Driver/src/misc.o
- .debug_abbrev  0x0000000000000000      0x156 build/StdPeriph_Driver/src/misc.o
+ .text          0x0000000000000000      0x18c build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/misc.o
+ .data          0x0000000000000000        0x0 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/misc.o
+ .bss           0x0000000000000000        0x0 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/misc.o
+ .debug_info    0x0000000000000000      0x53d build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/misc.o
+ .debug_abbrev  0x0000000000000000      0x145 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/misc.o
  .debug_aranges
-                0x0000000000000000       0x20 build/StdPeriph_Driver/src/misc.o
- .debug_line    0x0000000000000000      0x1c8 build/StdPeriph_Driver/src/misc.o
- .debug_str     0x0000000000000000      0x3af build/StdPeriph_Driver/src/misc.o
- .comment       0x0000000000000000       0x39 build/StdPeriph_Driver/src/misc.o
- .debug_frame   0x0000000000000000       0xd8 build/StdPeriph_Driver/src/misc.o
+                0x0000000000000000       0x20 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/misc.o
+ .debug_line    0x0000000000000000      0x259 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/misc.o
+ .debug_str     0x0000000000000000      0x3e0 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/misc.o
+ .comment       0x0000000000000000       0x39 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/misc.o
+ .debug_frame   0x0000000000000000       0xd8 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/misc.o
  .ARM.attributes
-                0x0000000000000000       0x33 build/StdPeriph_Driver/src/misc.o
- .text          0x0000000000000000      0xa3c build/StdPeriph_Driver/src/stm32f10x_adc.o
- .data          0x0000000000000000        0x0 build/StdPeriph_Driver/src/stm32f10x_adc.o
- .bss           0x0000000000000000        0x0 build/StdPeriph_Driver/src/stm32f10x_adc.o
- .debug_info    0x0000000000000000      0xb62 build/StdPeriph_Driver/src/stm32f10x_adc.o
- .debug_abbrev  0x0000000000000000      0x19a build/StdPeriph_Driver/src/stm32f10x_adc.o
+                0x0000000000000000       0x33 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/misc.o
+ .text          0x0000000000000000      0xa3c build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_adc.o
+ .data          0x0000000000000000        0x0 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_adc.o
+ .bss           0x0000000000000000        0x0 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_adc.o
+ .debug_info    0x0000000000000000      0xb74 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_adc.o
+ .debug_abbrev  0x0000000000000000      0x198 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_adc.o
  .debug_aranges
-                0x0000000000000000       0x20 build/StdPeriph_Driver/src/stm32f10x_adc.o
- .debug_line    0x0000000000000000      0x300 build/StdPeriph_Driver/src/stm32f10x_adc.o
- .debug_str     0x0000000000000000      0x6f2 build/StdPeriph_Driver/src/stm32f10x_adc.o
- .comment       0x0000000000000000       0x39 build/StdPeriph_Driver/src/stm32f10x_adc.o
- .debug_frame   0x0000000000000000      0x5a4 build/StdPeriph_Driver/src/stm32f10x_adc.o
+                0x0000000000000000       0x20 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_adc.o
+ .debug_line    0x0000000000000000      0x391 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_adc.o
+ .debug_str     0x0000000000000000      0x71d build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_adc.o
+ .comment       0x0000000000000000       0x39 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_adc.o
+ .debug_frame   0x0000000000000000      0x5a4 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_adc.o
  .ARM.attributes
-                0x0000000000000000       0x33 build/StdPeriph_Driver/src/stm32f10x_adc.o
- .text          0x0000000000000000      0x1c0 build/StdPeriph_Driver/src/stm32f10x_bkp.o
- .data          0x0000000000000000        0x0 build/StdPeriph_Driver/src/stm32f10x_bkp.o
- .bss           0x0000000000000000        0x0 build/StdPeriph_Driver/src/stm32f10x_bkp.o
- .debug_info    0x0000000000000000      0x78b build/StdPeriph_Driver/src/stm32f10x_bkp.o
- .debug_abbrev  0x0000000000000000      0x165 build/StdPeriph_Driver/src/stm32f10x_bkp.o
+                0x0000000000000000       0x33 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_adc.o
+ .text          0x0000000000000000      0x1c0 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_bkp.o
+ .data          0x0000000000000000        0x0 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_bkp.o
+ .bss           0x0000000000000000        0x0 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_bkp.o
+ .debug_info    0x0000000000000000      0x79d build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_bkp.o
+ .debug_abbrev  0x0000000000000000      0x163 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_bkp.o
  .debug_aranges
-                0x0000000000000000       0x20 build/StdPeriph_Driver/src/stm32f10x_bkp.o
- .debug_line    0x0000000000000000      0x1ca build/StdPeriph_Driver/src/stm32f10x_bkp.o
- .debug_str     0x0000000000000000      0x5ac build/StdPeriph_Driver/src/stm32f10x_bkp.o
- .comment       0x0000000000000000       0x39 build/StdPeriph_Driver/src/stm32f10x_bkp.o
- .debug_frame   0x0000000000000000      0x1c4 build/StdPeriph_Driver/src/stm32f10x_bkp.o
+                0x0000000000000000       0x20 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_bkp.o
+ .debug_line    0x0000000000000000      0x20d build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_bkp.o
+ .debug_str     0x0000000000000000      0x5d7 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_bkp.o
+ .comment       0x0000000000000000       0x39 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_bkp.o
+ .debug_frame   0x0000000000000000      0x1c4 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_bkp.o
  .ARM.attributes
-                0x0000000000000000       0x33 build/StdPeriph_Driver/src/stm32f10x_bkp.o
- .text          0x0000000000000000      0xfa8 build/StdPeriph_Driver/src/stm32f10x_can.o
- .data          0x0000000000000000        0x0 build/StdPeriph_Driver/src/stm32f10x_can.o
- .bss           0x0000000000000000        0x0 build/StdPeriph_Driver/src/stm32f10x_can.o
- .debug_info    0x0000000000000000      0xb8a build/StdPeriph_Driver/src/stm32f10x_can.o
- .debug_abbrev  0x0000000000000000      0x1f5 build/StdPeriph_Driver/src/stm32f10x_can.o
+                0x0000000000000000       0x33 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_bkp.o
+ .text          0x0000000000000000      0xfa8 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_can.o
+ .data          0x0000000000000000        0x0 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_can.o
+ .bss           0x0000000000000000        0x0 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_can.o
+ .debug_info    0x0000000000000000      0xb9c build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_can.o
+ .debug_abbrev  0x0000000000000000      0x1f3 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_can.o
  .debug_aranges
-                0x0000000000000000       0x20 build/StdPeriph_Driver/src/stm32f10x_can.o
- .debug_line    0x0000000000000000      0x3d4 build/StdPeriph_Driver/src/stm32f10x_can.o
- .debug_str     0x0000000000000000      0x725 build/StdPeriph_Driver/src/stm32f10x_can.o
- .comment       0x0000000000000000       0x39 build/StdPeriph_Driver/src/stm32f10x_can.o
- .debug_frame   0x0000000000000000      0x3f0 build/StdPeriph_Driver/src/stm32f10x_can.o
+                0x0000000000000000       0x20 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_can.o
+ .debug_line    0x0000000000000000      0x465 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_can.o
+ .debug_str     0x0000000000000000      0x750 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_can.o
+ .comment       0x0000000000000000       0x39 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_can.o
+ .debug_frame   0x0000000000000000      0x3f0 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_can.o
  .ARM.attributes
-                0x0000000000000000       0x33 build/StdPeriph_Driver/src/stm32f10x_can.o
- .text          0x0000000000000000      0x290 build/StdPeriph_Driver/src/stm32f10x_cec.o
- .data          0x0000000000000000        0x0 build/StdPeriph_Driver/src/stm32f10x_cec.o
- .bss           0x0000000000000000        0x0 build/StdPeriph_Driver/src/stm32f10x_cec.o
- .debug_info    0x0000000000000000      0x40a build/StdPeriph_Driver/src/stm32f10x_cec.o
- .debug_abbrev  0x0000000000000000      0x1b0 build/StdPeriph_Driver/src/stm32f10x_cec.o
+                0x0000000000000000       0x33 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_can.o
+ .text          0x0000000000000000      0x290 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_cec.o
+ .data          0x0000000000000000        0x0 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_cec.o
+ .bss           0x0000000000000000        0x0 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_cec.o
+ .debug_info    0x0000000000000000      0x41d build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_cec.o
+ .debug_abbrev  0x0000000000000000      0x1ae build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_cec.o
  .debug_aranges
-                0x0000000000000000       0x20 build/StdPeriph_Driver/src/stm32f10x_cec.o
- .debug_line    0x0000000000000000      0x218 build/StdPeriph_Driver/src/stm32f10x_cec.o
- .debug_str     0x0000000000000000      0x36d build/StdPeriph_Driver/src/stm32f10x_cec.o
- .comment       0x0000000000000000       0x39 build/StdPeriph_Driver/src/stm32f10x_cec.o
- .debug_frame   0x0000000000000000      0x224 build/StdPeriph_Driver/src/stm32f10x_cec.o
+                0x0000000000000000       0x20 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_cec.o
+ .debug_line    0x0000000000000000      0x2a9 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_cec.o
+ .debug_str     0x0000000000000000      0x398 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_cec.o
+ .comment       0x0000000000000000       0x39 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_cec.o
+ .debug_frame   0x0000000000000000      0x224 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_cec.o
  .ARM.attributes
-                0x0000000000000000       0x33 build/StdPeriph_Driver/src/stm32f10x_cec.o
- .text          0x0000000000000000       0xd0 build/StdPeriph_Driver/src/stm32f10x_crc.o
- .data          0x0000000000000000        0x0 build/StdPeriph_Driver/src/stm32f10x_crc.o
- .bss           0x0000000000000000        0x0 build/StdPeriph_Driver/src/stm32f10x_crc.o
- .debug_info    0x0000000000000000      0x1f6 build/StdPeriph_Driver/src/stm32f10x_crc.o
- .debug_abbrev  0x0000000000000000      0x116 build/StdPeriph_Driver/src/stm32f10x_crc.o
+                0x0000000000000000       0x33 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_cec.o
+ .text          0x0000000000000000       0xd0 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_crc.o
+ .data          0x0000000000000000        0x0 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_crc.o
+ .bss           0x0000000000000000        0x0 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_crc.o
+ .debug_info    0x0000000000000000      0x208 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_crc.o
+ .debug_abbrev  0x0000000000000000      0x114 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_crc.o
  .debug_aranges
-                0x0000000000000000       0x20 build/StdPeriph_Driver/src/stm32f10x_crc.o
- .debug_line    0x0000000000000000      0x1b1 build/StdPeriph_Driver/src/stm32f10x_crc.o
- .debug_str     0x0000000000000000      0x232 build/StdPeriph_Driver/src/stm32f10x_crc.o
- .comment       0x0000000000000000       0x39 build/StdPeriph_Driver/src/stm32f10x_crc.o
- .debug_frame   0x0000000000000000       0xe8 build/StdPeriph_Driver/src/stm32f10x_crc.o
+                0x0000000000000000       0x20 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_crc.o
+ .debug_line    0x0000000000000000      0x1f4 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_crc.o
+ .debug_str     0x0000000000000000      0x25d build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_crc.o
+ .comment       0x0000000000000000       0x39 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_crc.o
+ .debug_frame   0x0000000000000000       0xe8 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_crc.o
  .ARM.attributes
-                0x0000000000000000       0x33 build/StdPeriph_Driver/src/stm32f10x_crc.o
- .text          0x0000000000000000      0x304 build/StdPeriph_Driver/src/stm32f10x_dac.o
- .data          0x0000000000000000        0x0 build/StdPeriph_Driver/src/stm32f10x_dac.o
- .bss           0x0000000000000000        0x0 build/StdPeriph_Driver/src/stm32f10x_dac.o
- .debug_info    0x0000000000000000      0x49e build/StdPeriph_Driver/src/stm32f10x_dac.o
- .debug_abbrev  0x0000000000000000      0x175 build/StdPeriph_Driver/src/stm32f10x_dac.o
+                0x0000000000000000       0x33 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_crc.o
+ .text          0x0000000000000000      0x304 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_dac.o
+ .data          0x0000000000000000        0x0 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_dac.o
+ .bss           0x0000000000000000        0x0 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_dac.o
+ .debug_info    0x0000000000000000      0x4b0 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_dac.o
+ .debug_abbrev  0x0000000000000000      0x173 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_dac.o
  .debug_aranges
-                0x0000000000000000       0x20 build/StdPeriph_Driver/src/stm32f10x_dac.o
- .debug_line    0x0000000000000000      0x211 build/StdPeriph_Driver/src/stm32f10x_dac.o
- .debug_str     0x0000000000000000      0x3a6 build/StdPeriph_Driver/src/stm32f10x_dac.o
- .comment       0x0000000000000000       0x39 build/StdPeriph_Driver/src/stm32f10x_dac.o
- .debug_frame   0x0000000000000000      0x1e4 build/StdPeriph_Driver/src/stm32f10x_dac.o
+                0x0000000000000000       0x20 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_dac.o
+ .debug_line    0x0000000000000000      0x2a2 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_dac.o
+ .debug_str     0x0000000000000000      0x3d1 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_dac.o
+ .comment       0x0000000000000000       0x39 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_dac.o
+ .debug_frame   0x0000000000000000      0x1e4 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_dac.o
  .ARM.attributes
-                0x0000000000000000       0x33 build/StdPeriph_Driver/src/stm32f10x_dac.o
- .text          0x0000000000000000       0x70 build/StdPeriph_Driver/src/stm32f10x_dbgmcu.o
- .data          0x0000000000000000        0x0 build/StdPeriph_Driver/src/stm32f10x_dbgmcu.o
- .bss           0x0000000000000000        0x0 build/StdPeriph_Driver/src/stm32f10x_dbgmcu.o
- .debug_info    0x0000000000000000      0x14c build/StdPeriph_Driver/src/stm32f10x_dbgmcu.o
- .debug_abbrev  0x0000000000000000       0xe0 build/StdPeriph_Driver/src/stm32f10x_dbgmcu.o
+                0x0000000000000000       0x33 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_dac.o
+ .text          0x0000000000000000       0x70 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_dbgmcu.o
+ .data          0x0000000000000000        0x0 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_dbgmcu.o
+ .bss           0x0000000000000000        0x0 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_dbgmcu.o
+ .debug_info    0x0000000000000000      0x15e build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_dbgmcu.o
+ .debug_abbrev  0x0000000000000000       0xde build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_dbgmcu.o
  .debug_aranges
-                0x0000000000000000       0x20 build/StdPeriph_Driver/src/stm32f10x_dbgmcu.o
- .debug_line    0x0000000000000000      0x199 build/StdPeriph_Driver/src/stm32f10x_dbgmcu.o
- .debug_str     0x0000000000000000      0x1e9 build/StdPeriph_Driver/src/stm32f10x_dbgmcu.o
- .comment       0x0000000000000000       0x39 build/StdPeriph_Driver/src/stm32f10x_dbgmcu.o
- .debug_frame   0x0000000000000000       0x78 build/StdPeriph_Driver/src/stm32f10x_dbgmcu.o
+                0x0000000000000000       0x20 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_dbgmcu.o
+ .debug_line    0x0000000000000000      0x1dc build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_dbgmcu.o
+ .debug_str     0x0000000000000000      0x214 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_dbgmcu.o
+ .comment       0x0000000000000000       0x39 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_dbgmcu.o
+ .debug_frame   0x0000000000000000       0x78 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_dbgmcu.o
  .ARM.attributes
-                0x0000000000000000       0x33 build/StdPeriph_Driver/src/stm32f10x_dbgmcu.o
- .text          0x0000000000000000      0x404 build/StdPeriph_Driver/src/stm32f10x_dma.o
- .data          0x0000000000000000        0x0 build/StdPeriph_Driver/src/stm32f10x_dma.o
- .bss           0x0000000000000000        0x0 build/StdPeriph_Driver/src/stm32f10x_dma.o
- .debug_info    0x0000000000000000      0x461 build/StdPeriph_Driver/src/stm32f10x_dma.o
- .debug_abbrev  0x0000000000000000      0x157 build/StdPeriph_Driver/src/stm32f10x_dma.o
+                0x0000000000000000       0x33 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_dbgmcu.o
+ .text          0x0000000000000000      0x404 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_dma.o
+ .data          0x0000000000000000        0x0 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_dma.o
+ .bss           0x0000000000000000        0x0 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_dma.o
+ .debug_info    0x0000000000000000      0x473 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_dma.o
+ .debug_abbrev  0x0000000000000000      0x155 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_dma.o
  .debug_aranges
-                0x0000000000000000       0x20 build/StdPeriph_Driver/src/stm32f10x_dma.o
- .debug_line    0x0000000000000000      0x23b build/StdPeriph_Driver/src/stm32f10x_dma.o
- .debug_str     0x0000000000000000      0x3ae build/StdPeriph_Driver/src/stm32f10x_dma.o
- .comment       0x0000000000000000       0x39 build/StdPeriph_Driver/src/stm32f10x_dma.o
- .debug_frame   0x0000000000000000      0x1c8 build/StdPeriph_Driver/src/stm32f10x_dma.o
+                0x0000000000000000       0x20 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_dma.o
+ .debug_line    0x0000000000000000      0x2cc build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_dma.o
+ .debug_str     0x0000000000000000      0x3d9 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_dma.o
+ .comment       0x0000000000000000       0x39 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_dma.o
+ .debug_frame   0x0000000000000000      0x1c8 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_dma.o
  .ARM.attributes
-                0x0000000000000000       0x33 build/StdPeriph_Driver/src/stm32f10x_dma.o
- .text          0x0000000000000000      0x21c build/StdPeriph_Driver/src/stm32f10x_exti.o
- .data          0x0000000000000000        0x0 build/StdPeriph_Driver/src/stm32f10x_exti.o
- .bss           0x0000000000000000        0x0 build/StdPeriph_Driver/src/stm32f10x_exti.o
- .debug_info    0x0000000000000000      0x32f build/StdPeriph_Driver/src/stm32f10x_exti.o
- .debug_abbrev  0x0000000000000000      0x153 build/StdPeriph_Driver/src/stm32f10x_exti.o
+                0x0000000000000000       0x33 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_dma.o
+ .text          0x0000000000000000      0x21c build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_exti.o
+ .data          0x0000000000000000        0x0 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_exti.o
+ .bss           0x0000000000000000        0x0 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_exti.o
+ .debug_info    0x0000000000000000      0x341 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_exti.o
+ .debug_abbrev  0x0000000000000000      0x151 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_exti.o
  .debug_aranges
-                0x0000000000000000       0x20 build/StdPeriph_Driver/src/stm32f10x_exti.o
- .debug_line    0x0000000000000000      0x201 build/StdPeriph_Driver/src/stm32f10x_exti.o
- .debug_str     0x0000000000000000      0x340 build/StdPeriph_Driver/src/stm32f10x_exti.o
- .comment       0x0000000000000000       0x39 build/StdPeriph_Driver/src/stm32f10x_exti.o
- .debug_frame   0x0000000000000000      0x148 build/StdPeriph_Driver/src/stm32f10x_exti.o
+                0x0000000000000000       0x20 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_exti.o
+ .debug_line    0x0000000000000000      0x292 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_exti.o
+ .debug_str     0x0000000000000000      0x36b build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_exti.o
+ .comment       0x0000000000000000       0x39 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_exti.o
+ .debug_frame   0x0000000000000000      0x148 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_exti.o
  .ARM.attributes
-                0x0000000000000000       0x33 build/StdPeriph_Driver/src/stm32f10x_exti.o
- .text          0x0000000000000000      0x96c build/StdPeriph_Driver/src/stm32f10x_flash.o
- .data          0x0000000000000000        0x0 build/StdPeriph_Driver/src/stm32f10x_flash.o
- .bss           0x0000000000000000        0x0 build/StdPeriph_Driver/src/stm32f10x_flash.o
- .debug_info    0x0000000000000000      0x79f build/StdPeriph_Driver/src/stm32f10x_flash.o
- .debug_abbrev  0x0000000000000000      0x18d build/StdPeriph_Driver/src/stm32f10x_flash.o
+                0x0000000000000000       0x33 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_exti.o
+ .text          0x0000000000000000      0x96c build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_flash.o
+ .data          0x0000000000000000        0x0 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_flash.o
+ .bss           0x0000000000000000        0x0 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_flash.o
+ .debug_info    0x0000000000000000      0x7b1 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_flash.o
+ .debug_abbrev  0x0000000000000000      0x18b build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_flash.o
  .debug_aranges
-                0x0000000000000000       0x20 build/StdPeriph_Driver/src/stm32f10x_flash.o
- .debug_line    0x0000000000000000      0x32b build/StdPeriph_Driver/src/stm32f10x_flash.o
- .debug_str     0x0000000000000000      0x5df build/StdPeriph_Driver/src/stm32f10x_flash.o
- .comment       0x0000000000000000       0x39 build/StdPeriph_Driver/src/stm32f10x_flash.o
- .debug_frame   0x0000000000000000      0x410 build/StdPeriph_Driver/src/stm32f10x_flash.o
+                0x0000000000000000       0x20 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_flash.o
+ .debug_line    0x0000000000000000      0x3bc build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_flash.o
+ .debug_str     0x0000000000000000      0x60a build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_flash.o
+ .comment       0x0000000000000000       0x39 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_flash.o
+ .debug_frame   0x0000000000000000      0x410 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_flash.o
  .ARM.attributes
-                0x0000000000000000       0x33 build/StdPeriph_Driver/src/stm32f10x_flash.o
- .text          0x0000000000000000      0x94c build/StdPeriph_Driver/src/stm32f10x_fsmc.o
- .data          0x0000000000000000        0x0 build/StdPeriph_Driver/src/stm32f10x_fsmc.o
- .bss           0x0000000000000000        0x0 build/StdPeriph_Driver/src/stm32f10x_fsmc.o
- .debug_info    0x0000000000000000      0x8e2 build/StdPeriph_Driver/src/stm32f10x_fsmc.o
- .debug_abbrev  0x0000000000000000      0x172 build/StdPeriph_Driver/src/stm32f10x_fsmc.o
+                0x0000000000000000       0x33 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_flash.o
+ .text          0x0000000000000000      0x94c build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_fsmc.o
+ .data          0x0000000000000000        0x0 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_fsmc.o
+ .bss           0x0000000000000000        0x0 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_fsmc.o
+ .debug_info    0x0000000000000000      0x8f4 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_fsmc.o
+ .debug_abbrev  0x0000000000000000      0x170 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_fsmc.o
  .debug_aranges
-                0x0000000000000000       0x20 build/StdPeriph_Driver/src/stm32f10x_fsmc.o
- .debug_line    0x0000000000000000      0x31f build/StdPeriph_Driver/src/stm32f10x_fsmc.o
- .debug_str     0x0000000000000000      0x771 build/StdPeriph_Driver/src/stm32f10x_fsmc.o
- .comment       0x0000000000000000       0x39 build/StdPeriph_Driver/src/stm32f10x_fsmc.o
- .debug_frame   0x0000000000000000      0x300 build/StdPeriph_Driver/src/stm32f10x_fsmc.o
+                0x0000000000000000       0x20 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_fsmc.o
+ .debug_line    0x0000000000000000      0x3b0 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_fsmc.o
+ .debug_str     0x0000000000000000      0x79c build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_fsmc.o
+ .comment       0x0000000000000000       0x39 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_fsmc.o
+ .debug_frame   0x0000000000000000      0x300 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_fsmc.o
  .ARM.attributes
-                0x0000000000000000       0x33 build/StdPeriph_Driver/src/stm32f10x_fsmc.o
- .data          0x0000000000000000        0x0 build/StdPeriph_Driver/src/stm32f10x_gpio.o
- .bss           0x0000000000000000        0x0 build/StdPeriph_Driver/src/stm32f10x_gpio.o
- .text          0x0000000000000000      0x958 build/StdPeriph_Driver/src/stm32f10x_i2c.o
- .data          0x0000000000000000        0x0 build/StdPeriph_Driver/src/stm32f10x_i2c.o
- .bss           0x0000000000000000        0x0 build/StdPeriph_Driver/src/stm32f10x_i2c.o
- .debug_info    0x0000000000000000      0xaee build/StdPeriph_Driver/src/stm32f10x_i2c.o
- .debug_abbrev  0x0000000000000000      0x166 build/StdPeriph_Driver/src/stm32f10x_i2c.o
+                0x0000000000000000       0x33 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_fsmc.o
+ .data          0x0000000000000000        0x0 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_gpio.o
+ .bss           0x0000000000000000        0x0 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_gpio.o
+ .text          0x0000000000000000      0x958 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_i2c.o
+ .data          0x0000000000000000        0x0 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_i2c.o
+ .bss           0x0000000000000000        0x0 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_i2c.o
+ .debug_info    0x0000000000000000      0xb00 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_i2c.o
+ .debug_abbrev  0x0000000000000000      0x164 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_i2c.o
  .debug_aranges
-                0x0000000000000000       0x20 build/StdPeriph_Driver/src/stm32f10x_i2c.o
- .debug_line    0x0000000000000000      0x2e9 build/StdPeriph_Driver/src/stm32f10x_i2c.o
- .debug_str     0x0000000000000000      0x65d build/StdPeriph_Driver/src/stm32f10x_i2c.o
- .comment       0x0000000000000000       0x39 build/StdPeriph_Driver/src/stm32f10x_i2c.o
- .debug_frame   0x0000000000000000      0x530 build/StdPeriph_Driver/src/stm32f10x_i2c.o
+                0x0000000000000000       0x20 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_i2c.o
+ .debug_line    0x0000000000000000      0x37a build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_i2c.o
+ .debug_str     0x0000000000000000      0x688 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_i2c.o
+ .comment       0x0000000000000000       0x39 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_i2c.o
+ .debug_frame   0x0000000000000000      0x530 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_i2c.o
  .ARM.attributes
-                0x0000000000000000       0x33 build/StdPeriph_Driver/src/stm32f10x_i2c.o
- .text          0x0000000000000000       0xc8 build/StdPeriph_Driver/src/stm32f10x_iwdg.o
- .data          0x0000000000000000        0x0 build/StdPeriph_Driver/src/stm32f10x_iwdg.o
- .bss           0x0000000000000000        0x0 build/StdPeriph_Driver/src/stm32f10x_iwdg.o
- .debug_info    0x0000000000000000      0x1f8 build/StdPeriph_Driver/src/stm32f10x_iwdg.o
- .debug_abbrev  0x0000000000000000      0x103 build/StdPeriph_Driver/src/stm32f10x_iwdg.o
+                0x0000000000000000       0x33 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_i2c.o
+ .text          0x0000000000000000       0xc8 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_iwdg.o
+ .data          0x0000000000000000        0x0 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_iwdg.o
+ .bss           0x0000000000000000        0x0 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_iwdg.o
+ .debug_info    0x0000000000000000      0x20a build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_iwdg.o
+ .debug_abbrev  0x0000000000000000      0x101 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_iwdg.o
  .debug_aranges
-                0x0000000000000000       0x20 build/StdPeriph_Driver/src/stm32f10x_iwdg.o
- .debug_line    0x0000000000000000      0x1a8 build/StdPeriph_Driver/src/stm32f10x_iwdg.o
- .debug_str     0x0000000000000000      0x253 build/StdPeriph_Driver/src/stm32f10x_iwdg.o
- .comment       0x0000000000000000       0x39 build/StdPeriph_Driver/src/stm32f10x_iwdg.o
- .debug_frame   0x0000000000000000       0xf0 build/StdPeriph_Driver/src/stm32f10x_iwdg.o
+                0x0000000000000000       0x20 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_iwdg.o
+ .debug_line    0x0000000000000000      0x1eb build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_iwdg.o
+ .debug_str     0x0000000000000000      0x27e build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_iwdg.o
+ .comment       0x0000000000000000       0x39 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_iwdg.o
+ .debug_frame   0x0000000000000000       0xf0 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_iwdg.o
  .ARM.attributes
-                0x0000000000000000       0x33 build/StdPeriph_Driver/src/stm32f10x_iwdg.o
- .text          0x0000000000000000      0x1c8 build/StdPeriph_Driver/src/stm32f10x_pwr.o
- .data          0x0000000000000000        0x0 build/StdPeriph_Driver/src/stm32f10x_pwr.o
- .bss           0x0000000000000000        0x0 build/StdPeriph_Driver/src/stm32f10x_pwr.o
- .debug_info    0x0000000000000000      0x421 build/StdPeriph_Driver/src/stm32f10x_pwr.o
- .debug_abbrev  0x0000000000000000      0x1ad build/StdPeriph_Driver/src/stm32f10x_pwr.o
+                0x0000000000000000       0x33 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_iwdg.o
+ .text          0x0000000000000000      0x1ac build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_pwr.o
+ .data          0x0000000000000000        0x0 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_pwr.o
+ .bss           0x0000000000000000        0x0 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_pwr.o
+ .debug_info    0x0000000000000000      0x482 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_pwr.o
+ .debug_abbrev  0x0000000000000000      0x17f build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_pwr.o
  .debug_aranges
-                0x0000000000000000       0x20 build/StdPeriph_Driver/src/stm32f10x_pwr.o
- .debug_line    0x0000000000000000      0x1d0 build/StdPeriph_Driver/src/stm32f10x_pwr.o
- .debug_str     0x0000000000000000      0x309 build/StdPeriph_Driver/src/stm32f10x_pwr.o
- .comment       0x0000000000000000       0x39 build/StdPeriph_Driver/src/stm32f10x_pwr.o
- .debug_frame   0x0000000000000000      0x19c build/StdPeriph_Driver/src/stm32f10x_pwr.o
+                0x0000000000000000       0x20 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_pwr.o
+ .debug_line    0x0000000000000000      0x232 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_pwr.o
+ .debug_str     0x0000000000000000      0x344 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_pwr.o
+ .comment       0x0000000000000000       0x39 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_pwr.o
+ .debug_frame   0x0000000000000000      0x164 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_pwr.o
  .ARM.attributes
-                0x0000000000000000       0x33 build/StdPeriph_Driver/src/stm32f10x_pwr.o
- .bss           0x0000000000000000        0x0 build/StdPeriph_Driver/src/stm32f10x_rcc.o
- .text          0x0000000000000000      0x2ac build/StdPeriph_Driver/src/stm32f10x_rtc.o
- .data          0x0000000000000000        0x0 build/StdPeriph_Driver/src/stm32f10x_rtc.o
- .bss           0x0000000000000000        0x0 build/StdPeriph_Driver/src/stm32f10x_rtc.o
- .debug_info    0x0000000000000000      0x422 build/StdPeriph_Driver/src/stm32f10x_rtc.o
- .debug_abbrev  0x0000000000000000      0x18f build/StdPeriph_Driver/src/stm32f10x_rtc.o
+                0x0000000000000000       0x33 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_pwr.o
+ .bss           0x0000000000000000        0x0 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_rcc.o
+ .text          0x0000000000000000      0x2d4 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_rtc.o
+ .data          0x0000000000000000        0x0 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_rtc.o
+ .bss           0x0000000000000000        0x0 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_rtc.o
+ .debug_info    0x0000000000000000      0x453 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_rtc.o
+ .debug_abbrev  0x0000000000000000      0x18d build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_rtc.o
  .debug_aranges
-                0x0000000000000000       0x20 build/StdPeriph_Driver/src/stm32f10x_rtc.o
- .debug_line    0x0000000000000000      0x1ee build/StdPeriph_Driver/src/stm32f10x_rtc.o
- .debug_str     0x0000000000000000      0x399 build/StdPeriph_Driver/src/stm32f10x_rtc.o
- .comment       0x0000000000000000       0x39 build/StdPeriph_Driver/src/stm32f10x_rtc.o
- .debug_frame   0x0000000000000000      0x214 build/StdPeriph_Driver/src/stm32f10x_rtc.o
+                0x0000000000000000       0x20 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_rtc.o
+ .debug_line    0x0000000000000000      0x235 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_rtc.o
+ .debug_str     0x0000000000000000      0x3d0 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_rtc.o
+ .comment       0x0000000000000000       0x39 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_rtc.o
+ .debug_frame   0x0000000000000000      0x214 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_rtc.o
  .ARM.attributes
-                0x0000000000000000       0x33 build/StdPeriph_Driver/src/stm32f10x_rtc.o
- .text          0x0000000000000000      0x514 build/StdPeriph_Driver/src/stm32f10x_sdio.o
- .data          0x0000000000000000        0x0 build/StdPeriph_Driver/src/stm32f10x_sdio.o
- .bss           0x0000000000000000        0x0 build/StdPeriph_Driver/src/stm32f10x_sdio.o
- .debug_info    0x0000000000000000      0x7d9 build/StdPeriph_Driver/src/stm32f10x_sdio.o
- .debug_abbrev  0x0000000000000000      0x1b1 build/StdPeriph_Driver/src/stm32f10x_sdio.o
+                0x0000000000000000       0x33 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_rtc.o
+ .text          0x0000000000000000      0x500 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_sdio.o
+ .data          0x0000000000000000        0x0 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_sdio.o
+ .bss           0x0000000000000000        0x0 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_sdio.o
+ .debug_info    0x0000000000000000      0x7ed build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_sdio.o
+ .debug_abbrev  0x0000000000000000      0x1af build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_sdio.o
  .debug_aranges
-                0x0000000000000000       0x20 build/StdPeriph_Driver/src/stm32f10x_sdio.o
- .debug_line    0x0000000000000000      0x27a build/StdPeriph_Driver/src/stm32f10x_sdio.o
- .debug_str     0x0000000000000000      0x627 build/StdPeriph_Driver/src/stm32f10x_sdio.o
- .comment       0x0000000000000000       0x39 build/StdPeriph_Driver/src/stm32f10x_sdio.o
- .debug_frame   0x0000000000000000      0x490 build/StdPeriph_Driver/src/stm32f10x_sdio.o
+                0x0000000000000000       0x20 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_sdio.o
+ .debug_line    0x0000000000000000      0x30a build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_sdio.o
+ .debug_str     0x0000000000000000      0x652 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_sdio.o
+ .comment       0x0000000000000000       0x39 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_sdio.o
+ .debug_frame   0x0000000000000000      0x490 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_sdio.o
  .ARM.attributes
-                0x0000000000000000       0x33 build/StdPeriph_Driver/src/stm32f10x_sdio.o
- .text          0x0000000000000000      0x6f4 build/StdPeriph_Driver/src/stm32f10x_spi.o
- .data          0x0000000000000000        0x0 build/StdPeriph_Driver/src/stm32f10x_spi.o
- .bss           0x0000000000000000        0x0 build/StdPeriph_Driver/src/stm32f10x_spi.o
- .debug_info    0x0000000000000000      0x8e1 build/StdPeriph_Driver/src/stm32f10x_spi.o
- .debug_abbrev  0x0000000000000000      0x180 build/StdPeriph_Driver/src/stm32f10x_spi.o
+                0x0000000000000000       0x33 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_sdio.o
+ .text          0x0000000000000000      0x6f4 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_spi.o
+ .data          0x0000000000000000        0x0 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_spi.o
+ .bss           0x0000000000000000        0x0 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_spi.o
+ .debug_info    0x0000000000000000      0x8f3 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_spi.o
+ .debug_abbrev  0x0000000000000000      0x17e build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_spi.o
  .debug_aranges
-                0x0000000000000000       0x20 build/StdPeriph_Driver/src/stm32f10x_spi.o
- .debug_line    0x0000000000000000      0x2b3 build/StdPeriph_Driver/src/stm32f10x_spi.o
- .debug_str     0x0000000000000000      0x5f4 build/StdPeriph_Driver/src/stm32f10x_spi.o
- .comment       0x0000000000000000       0x39 build/StdPeriph_Driver/src/stm32f10x_spi.o
- .debug_frame   0x0000000000000000      0x3a0 build/StdPeriph_Driver/src/stm32f10x_spi.o
+                0x0000000000000000       0x20 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_spi.o
+ .debug_line    0x0000000000000000      0x344 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_spi.o
+ .debug_str     0x0000000000000000      0x61f build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_spi.o
+ .comment       0x0000000000000000       0x39 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_spi.o
+ .debug_frame   0x0000000000000000      0x3a0 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_spi.o
  .ARM.attributes
-                0x0000000000000000       0x33 build/StdPeriph_Driver/src/stm32f10x_spi.o
- .text          0x0000000000000000     0x1e10 build/StdPeriph_Driver/src/stm32f10x_tim.o
- .data          0x0000000000000000        0x0 build/StdPeriph_Driver/src/stm32f10x_tim.o
- .bss           0x0000000000000000        0x0 build/StdPeriph_Driver/src/stm32f10x_tim.o
- .debug_info    0x0000000000000000     0x1c46 build/StdPeriph_Driver/src/stm32f10x_tim.o
- .debug_abbrev  0x0000000000000000      0x1b2 build/StdPeriph_Driver/src/stm32f10x_tim.o
+                0x0000000000000000       0x33 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_spi.o
+ .text          0x0000000000000000     0x1e10 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_tim.o
+ .data          0x0000000000000000        0x0 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_tim.o
+ .bss           0x0000000000000000        0x0 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_tim.o
+ .debug_info    0x0000000000000000     0x1c58 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_tim.o
+ .debug_abbrev  0x0000000000000000      0x1b0 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_tim.o
  .debug_aranges
-                0x0000000000000000       0x20 build/StdPeriph_Driver/src/stm32f10x_tim.o
- .debug_line    0x0000000000000000      0x5fb build/StdPeriph_Driver/src/stm32f10x_tim.o
- .debug_str     0x0000000000000000      0xdd4 build/StdPeriph_Driver/src/stm32f10x_tim.o
- .comment       0x0000000000000000       0x39 build/StdPeriph_Driver/src/stm32f10x_tim.o
- .debug_frame   0x0000000000000000      0xe2c build/StdPeriph_Driver/src/stm32f10x_tim.o
+                0x0000000000000000       0x20 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_tim.o
+ .debug_line    0x0000000000000000      0x68c build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_tim.o
+ .debug_str     0x0000000000000000      0xdff build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_tim.o
+ .comment       0x0000000000000000       0x39 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_tim.o
+ .debug_frame   0x0000000000000000      0xe2c build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_tim.o
  .ARM.attributes
-                0x0000000000000000       0x33 build/StdPeriph_Driver/src/stm32f10x_tim.o
- .text          0x0000000000000000      0x908 build/StdPeriph_Driver/src/stm32f10x_usart.o
- .data          0x0000000000000000        0x0 build/StdPeriph_Driver/src/stm32f10x_usart.o
- .bss           0x0000000000000000        0x0 build/StdPeriph_Driver/src/stm32f10x_usart.o
- .debug_info    0x0000000000000000      0x9d6 build/StdPeriph_Driver/src/stm32f10x_usart.o
- .debug_abbrev  0x0000000000000000      0x164 build/StdPeriph_Driver/src/stm32f10x_usart.o
+                0x0000000000000000       0x33 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_tim.o
+ .text          0x0000000000000000      0x908 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_usart.o
+ .data          0x0000000000000000        0x0 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_usart.o
+ .bss           0x0000000000000000        0x0 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_usart.o
+ .debug_info    0x0000000000000000      0x9e8 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_usart.o
+ .debug_abbrev  0x0000000000000000      0x162 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_usart.o
  .debug_aranges
-                0x0000000000000000       0x20 build/StdPeriph_Driver/src/stm32f10x_usart.o
- .debug_line    0x0000000000000000      0x2e5 build/StdPeriph_Driver/src/stm32f10x_usart.o
- .debug_str     0x0000000000000000      0x687 build/StdPeriph_Driver/src/stm32f10x_usart.o
- .comment       0x0000000000000000       0x39 build/StdPeriph_Driver/src/stm32f10x_usart.o
- .debug_frame   0x0000000000000000      0x490 build/StdPeriph_Driver/src/stm32f10x_usart.o
+                0x0000000000000000       0x20 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_usart.o
+ .debug_line    0x0000000000000000      0x376 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_usart.o
+ .debug_str     0x0000000000000000      0x6b2 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_usart.o
+ .comment       0x0000000000000000       0x39 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_usart.o
+ .debug_frame   0x0000000000000000      0x490 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_usart.o
  .ARM.attributes
-                0x0000000000000000       0x33 build/StdPeriph_Driver/src/stm32f10x_usart.o
- .text          0x0000000000000000      0x118 build/StdPeriph_Driver/src/stm32f10x_wwdg.o
- .data          0x0000000000000000        0x0 build/StdPeriph_Driver/src/stm32f10x_wwdg.o
- .bss           0x0000000000000000        0x0 build/StdPeriph_Driver/src/stm32f10x_wwdg.o
- .debug_info    0x0000000000000000      0x21c build/StdPeriph_Driver/src/stm32f10x_wwdg.o
- .debug_abbrev  0x0000000000000000      0x119 build/StdPeriph_Driver/src/stm32f10x_wwdg.o
+                0x0000000000000000       0x33 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_usart.o
+ .text          0x0000000000000000      0x118 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_wwdg.o
+ .data          0x0000000000000000        0x0 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_wwdg.o
+ .bss           0x0000000000000000        0x0 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_wwdg.o
+ .debug_info    0x0000000000000000      0x22e build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_wwdg.o
+ .debug_abbrev  0x0000000000000000      0x117 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_wwdg.o
  .debug_aranges
-                0x0000000000000000       0x20 build/StdPeriph_Driver/src/stm32f10x_wwdg.o
- .debug_line    0x0000000000000000      0x1b1 build/StdPeriph_Driver/src/stm32f10x_wwdg.o
- .debug_str     0x0000000000000000      0x254 build/StdPeriph_Driver/src/stm32f10x_wwdg.o
- .comment       0x0000000000000000       0x39 build/StdPeriph_Driver/src/stm32f10x_wwdg.o
- .debug_frame   0x0000000000000000      0x12c build/StdPeriph_Driver/src/stm32f10x_wwdg.o
+                0x0000000000000000       0x20 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_wwdg.o
+ .debug_line    0x0000000000000000      0x1f4 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_wwdg.o
+ .debug_str     0x0000000000000000      0x27f build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_wwdg.o
+ .comment       0x0000000000000000       0x39 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_wwdg.o
+ .debug_frame   0x0000000000000000      0x12c build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_wwdg.o
  .ARM.attributes
-                0x0000000000000000       0x33 build/StdPeriph_Driver/src/stm32f10x_wwdg.o
+                0x0000000000000000       0x33 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_wwdg.o
  .data          0x0000000000000000        0x0 build/src/delay.o
  .data          0x0000000000000000        0x0 build/src/main.o
  .bss           0x0000000000000000        0x0 build/src/main.o
@@ -423,29 +423,29 @@ Linker script and memory map
 LOAD /usr/lib/gcc/arm-none-eabi/4.9.3/armv7-m/crti.o
 LOAD /usr/lib/gcc/arm-none-eabi/4.9.3/armv7-m/crtbegin.o
 LOAD /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7-m/crt0.o
-LOAD build/StdPeriph_Driver/src/misc.o
-LOAD build/StdPeriph_Driver/src/stm32f10x_adc.o
-LOAD build/StdPeriph_Driver/src/stm32f10x_bkp.o
-LOAD build/StdPeriph_Driver/src/stm32f10x_can.o
-LOAD build/StdPeriph_Driver/src/stm32f10x_cec.o
-LOAD build/StdPeriph_Driver/src/stm32f10x_crc.o
-LOAD build/StdPeriph_Driver/src/stm32f10x_dac.o
-LOAD build/StdPeriph_Driver/src/stm32f10x_dbgmcu.o
-LOAD build/StdPeriph_Driver/src/stm32f10x_dma.o
-LOAD build/StdPeriph_Driver/src/stm32f10x_exti.o
-LOAD build/StdPeriph_Driver/src/stm32f10x_flash.o
-LOAD build/StdPeriph_Driver/src/stm32f10x_fsmc.o
-LOAD build/StdPeriph_Driver/src/stm32f10x_gpio.o
-LOAD build/StdPeriph_Driver/src/stm32f10x_i2c.o
-LOAD build/StdPeriph_Driver/src/stm32f10x_iwdg.o
-LOAD build/StdPeriph_Driver/src/stm32f10x_pwr.o
-LOAD build/StdPeriph_Driver/src/stm32f10x_rcc.o
-LOAD build/StdPeriph_Driver/src/stm32f10x_rtc.o
-LOAD build/StdPeriph_Driver/src/stm32f10x_sdio.o
-LOAD build/StdPeriph_Driver/src/stm32f10x_spi.o
-LOAD build/StdPeriph_Driver/src/stm32f10x_tim.o
-LOAD build/StdPeriph_Driver/src/stm32f10x_usart.o
-LOAD build/StdPeriph_Driver/src/stm32f10x_wwdg.o
+LOAD build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/misc.o
+LOAD build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_adc.o
+LOAD build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_bkp.o
+LOAD build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_can.o
+LOAD build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_cec.o
+LOAD build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_crc.o
+LOAD build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_dac.o
+LOAD build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_dbgmcu.o
+LOAD build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_dma.o
+LOAD build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_exti.o
+LOAD build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_flash.o
+LOAD build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_fsmc.o
+LOAD build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_gpio.o
+LOAD build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_i2c.o
+LOAD build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_iwdg.o
+LOAD build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_pwr.o
+LOAD build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_rcc.o
+LOAD build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_rtc.o
+LOAD build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_sdio.o
+LOAD build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_spi.o
+LOAD build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_tim.o
+LOAD build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_usart.o
+LOAD build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_wwdg.o
 LOAD build/src/delay.o
 LOAD build/src/main.o
 LOAD build/src/syscalls.o
@@ -472,7 +472,7 @@ LOAD /usr/lib/gcc/arm-none-eabi/4.9.3/armv7-m/crtn.o
                 0x000000000800010c                . = ALIGN (0x4)
  *(.text)
  .text          0x000000000800010c       0xa4 /usr/lib/gcc/arm-none-eabi/4.9.3/armv7-m/crtbegin.o
- .text          0x00000000080001b0      0x5f8 build/StdPeriph_Driver/src/stm32f10x_gpio.o
+ .text          0x00000000080001b0      0x5f8 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_gpio.o
                 0x00000000080001b0                GPIO_DeInit
                 0x0000000008000294                GPIO_AFIODeInit
                 0x00000000080002ac                GPIO_Init
@@ -491,7 +491,7 @@ LOAD /usr/lib/gcc/arm-none-eabi/4.9.3/armv7-m/crtn.o
                 0x0000000008000628                GPIO_PinRemapConfig
                 0x0000000008000708                GPIO_EXTILineConfig
                 0x000000000800078c                GPIO_ETH_MediaInterfaceConfig
- .text          0x00000000080007a8      0x7dc build/StdPeriph_Driver/src/stm32f10x_rcc.o
+ .text          0x00000000080007a8      0x7dc build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_rcc.o
                 0x00000000080007a8                RCC_DeInit
                 0x0000000008000804                RCC_HSEConfig
                 0x0000000008000860                RCC_WaitForHSEStartUp
@@ -692,7 +692,7 @@ LOAD /usr/lib/gcc/arm-none-eabi/4.9.3/armv7-m/crtn.o
                 0x0000000020000000                . = ALIGN (0x4)
                 0x0000000020000000                _sdata = .
  *(.data)
- .data          0x0000000020000000       0x14 build/StdPeriph_Driver/src/stm32f10x_rcc.o
+ .data          0x0000000020000000       0x14 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_rcc.o
  .data          0x0000000020000014       0x14 build/src/system_stm32f10x.o
                 0x0000000020000014                SystemCoreClock
                 0x0000000020000018                AHBPrescTable
@@ -751,9 +751,9 @@ LOAD /usr/lib/gcc/arm-none-eabi/4.9.3/armv7-m/crtn.o
  .ARM.attributes
                 0x000000000000001d       0x2d /usr/lib/gcc/arm-none-eabi/4.9.3/armv7-m/crtbegin.o
  .ARM.attributes
-                0x000000000000004a       0x33 build/StdPeriph_Driver/src/stm32f10x_gpio.o
+                0x000000000000004a       0x33 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_gpio.o
  .ARM.attributes
-                0x000000000000007d       0x33 build/StdPeriph_Driver/src/stm32f10x_rcc.o
+                0x000000000000007d       0x33 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_rcc.o
  .ARM.attributes
                 0x00000000000000b0       0x33 build/src/delay.o
  .ARM.attributes
@@ -783,8 +783,8 @@ OUTPUT(build/program.elf elf32-littlearm)
 .comment        0x0000000000000000       0x70
  .comment       0x0000000000000000       0x38 /usr/lib/gcc/arm-none-eabi/4.9.3/armv7-m/crtbegin.o
                                          0x39 (size before relaxing)
- .comment       0x0000000000000038       0x39 build/StdPeriph_Driver/src/stm32f10x_gpio.o
- .comment       0x0000000000000038       0x39 build/StdPeriph_Driver/src/stm32f10x_rcc.o
+ .comment       0x0000000000000038       0x39 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_gpio.o
+ .comment       0x0000000000000038       0x39 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_rcc.o
  .comment       0x0000000000000038       0x39 build/src/delay.o
  .comment       0x0000000000000038       0x39 build/src/main.o
  .comment       0x0000000000000038       0x39 build/src/system_stm32f10x.o
@@ -797,39 +797,39 @@ OUTPUT(build/program.elf elf32-littlearm)
  .comment       0x0000000000000070       0x39 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-__call_atexit.o)
  .comment       0x0000000000000070       0x39 /usr/lib/gcc/arm-none-eabi/4.9.3/armv7-m/crtend.o
 
-.debug_info     0x0000000000000000     0x3a33
- .debug_info    0x0000000000000000      0x6d5 build/StdPeriph_Driver/src/stm32f10x_gpio.o
- .debug_info    0x00000000000006d5      0x87b build/StdPeriph_Driver/src/stm32f10x_rcc.o
- .debug_info    0x0000000000000f50      0x5b5 build/src/delay.o
- .debug_info    0x0000000000001505      0x218 build/src/main.o
- .debug_info    0x000000000000171d      0x438 build/src/system_stm32f10x.o
- .debug_info    0x0000000000001b55       0x6f build/startup/startup_stm32.o
- .debug_info    0x0000000000001bc4      0x10a /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-atexit.o)
- .debug_info    0x0000000000001cce       0xef /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-fini.o)
- .debug_info    0x0000000000001dbd      0x894 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-impure.o)
- .debug_info    0x0000000000002651      0x105 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-init.o)
- .debug_info    0x0000000000002756      0x934 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-__atexit.o)
- .debug_info    0x000000000000308a      0x9a9 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-__call_atexit.o)
+.debug_info     0x0000000000000000     0x3b06
+ .debug_info    0x0000000000000000      0x6e7 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_gpio.o
+ .debug_info    0x00000000000006e7      0x88d build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_rcc.o
+ .debug_info    0x0000000000000f74      0x609 build/src/delay.o
+ .debug_info    0x000000000000157d      0x22e build/src/main.o
+ .debug_info    0x00000000000017ab      0x47d build/src/system_stm32f10x.o
+ .debug_info    0x0000000000001c28       0x6f build/startup/startup_stm32.o
+ .debug_info    0x0000000000001c97      0x10a /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-atexit.o)
+ .debug_info    0x0000000000001da1       0xef /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-fini.o)
+ .debug_info    0x0000000000001e90      0x894 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-impure.o)
+ .debug_info    0x0000000000002724      0x105 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-init.o)
+ .debug_info    0x0000000000002829      0x934 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-__atexit.o)
+ .debug_info    0x000000000000315d      0x9a9 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-__call_atexit.o)
 
-.debug_abbrev   0x0000000000000000     0x1044
- .debug_abbrev  0x0000000000000000      0x1ca build/StdPeriph_Driver/src/stm32f10x_gpio.o
- .debug_abbrev  0x00000000000001ca      0x1bc build/StdPeriph_Driver/src/stm32f10x_rcc.o
- .debug_abbrev  0x0000000000000386      0x1e9 build/src/delay.o
- .debug_abbrev  0x000000000000056f      0x107 build/src/main.o
- .debug_abbrev  0x0000000000000676      0x179 build/src/system_stm32f10x.o
- .debug_abbrev  0x00000000000007ef       0x12 build/startup/startup_stm32.o
- .debug_abbrev  0x0000000000000801       0xb8 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-atexit.o)
- .debug_abbrev  0x00000000000008b9       0xbd /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-fini.o)
- .debug_abbrev  0x0000000000000976      0x180 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-impure.o)
- .debug_abbrev  0x0000000000000af6       0xba /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-init.o)
- .debug_abbrev  0x0000000000000bb0      0x20f /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-__atexit.o)
- .debug_abbrev  0x0000000000000dbf      0x285 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-__call_atexit.o)
+.debug_abbrev   0x0000000000000000      0xfea
+ .debug_abbrev  0x0000000000000000      0x1c8 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_gpio.o
+ .debug_abbrev  0x00000000000001c8      0x1ba build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_rcc.o
+ .debug_abbrev  0x0000000000000382      0x1be build/src/delay.o
+ .debug_abbrev  0x0000000000000540      0x107 build/src/main.o
+ .debug_abbrev  0x0000000000000647      0x14e build/src/system_stm32f10x.o
+ .debug_abbrev  0x0000000000000795       0x12 build/startup/startup_stm32.o
+ .debug_abbrev  0x00000000000007a7       0xb8 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-atexit.o)
+ .debug_abbrev  0x000000000000085f       0xbd /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-fini.o)
+ .debug_abbrev  0x000000000000091c      0x180 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-impure.o)
+ .debug_abbrev  0x0000000000000a9c       0xba /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-init.o)
+ .debug_abbrev  0x0000000000000b56      0x20f /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-__atexit.o)
+ .debug_abbrev  0x0000000000000d65      0x285 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-__call_atexit.o)
 
 .debug_aranges  0x0000000000000000      0x188
  .debug_aranges
-                0x0000000000000000       0x20 build/StdPeriph_Driver/src/stm32f10x_gpio.o
+                0x0000000000000000       0x20 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_gpio.o
  .debug_aranges
-                0x0000000000000020       0x20 build/StdPeriph_Driver/src/stm32f10x_rcc.o
+                0x0000000000000020       0x20 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_rcc.o
  .debug_aranges
                 0x0000000000000040       0x20 build/src/delay.o
  .debug_aranges
@@ -851,47 +851,47 @@ OUTPUT(build/program.elf elf32-littlearm)
  .debug_aranges
                 0x0000000000000160       0x28 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-__call_atexit.o)
 
-.debug_line     0x0000000000000000     0x11ad
- .debug_line    0x0000000000000000      0x28e build/StdPeriph_Driver/src/stm32f10x_gpio.o
- .debug_line    0x000000000000028e      0x2e9 build/StdPeriph_Driver/src/stm32f10x_rcc.o
- .debug_line    0x0000000000000577      0x1ba build/src/delay.o
- .debug_line    0x0000000000000731      0x1b9 build/src/main.o
- .debug_line    0x00000000000008ea      0x1ea build/src/system_stm32f10x.o
- .debug_line    0x0000000000000ad4       0x74 build/startup/startup_stm32.o
- .debug_line    0x0000000000000b48       0xc1 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-atexit.o)
- .debug_line    0x0000000000000c09       0x9c /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-fini.o)
- .debug_line    0x0000000000000ca5       0xf1 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-impure.o)
- .debug_line    0x0000000000000d96       0xb6 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-init.o)
- .debug_line    0x0000000000000e4c      0x19c /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-__atexit.o)
- .debug_line    0x0000000000000fe8      0x1c5 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-__call_atexit.o)
+.debug_line     0x0000000000000000     0x12fc
+ .debug_line    0x0000000000000000      0x31f build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_gpio.o
+ .debug_line    0x000000000000031f      0x37a build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_rcc.o
+ .debug_line    0x0000000000000699      0x1af build/src/delay.o
+ .debug_line    0x0000000000000848      0x1fc build/src/main.o
+ .debug_line    0x0000000000000a44      0x1df build/src/system_stm32f10x.o
+ .debug_line    0x0000000000000c23       0x74 build/startup/startup_stm32.o
+ .debug_line    0x0000000000000c97       0xc1 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-atexit.o)
+ .debug_line    0x0000000000000d58       0x9c /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-fini.o)
+ .debug_line    0x0000000000000df4       0xf1 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-impure.o)
+ .debug_line    0x0000000000000ee5       0xb6 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-init.o)
+ .debug_line    0x0000000000000f9b      0x19c /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-__atexit.o)
+ .debug_line    0x0000000000001137      0x1c5 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-__call_atexit.o)
 
-.debug_str      0x0000000000000000     0x1566
- .debug_str     0x0000000000000000      0x4c2 build/StdPeriph_Driver/src/stm32f10x_gpio.o
-                                        0x510 (size before relaxing)
- .debug_str     0x00000000000004c2      0x436 build/StdPeriph_Driver/src/stm32f10x_rcc.o
-                                        0x611 (size before relaxing)
- .debug_str     0x00000000000008f8      0x410 build/src/delay.o
-                                        0x578 (size before relaxing)
- .debug_str     0x0000000000000d08       0x32 build/src/main.o
-                                        0x2b9 (size before relaxing)
- .debug_str     0x0000000000000d3a       0x78 build/src/system_stm32f10x.o
-                                        0x2c6 (size before relaxing)
- .debug_str     0x0000000000000db2      0x15f /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-atexit.o)
+.debug_str      0x0000000000000000     0x1612
+ .debug_str     0x0000000000000000      0x4e5 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_gpio.o
+                                        0x53b (size before relaxing)
+ .debug_str     0x00000000000004e5      0x484 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_rcc.o
+                                        0x63c (size before relaxing)
+ .debug_str     0x0000000000000969      0x44b build/src/delay.o
+                                        0x590 (size before relaxing)
+ .debug_str     0x0000000000000db4       0x32 build/src/main.o
+                                        0x2cb (size before relaxing)
+ .debug_str     0x0000000000000de6       0x78 build/src/system_stm32f10x.o
+                                        0x2e8 (size before relaxing)
+ .debug_str     0x0000000000000e5e      0x15f /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-atexit.o)
                                         0x1f8 (size before relaxing)
- .debug_str     0x0000000000000f11       0xca /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-fini.o)
+ .debug_str     0x0000000000000fbd       0xca /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-fini.o)
                                         0x1f0 (size before relaxing)
- .debug_str     0x0000000000000fdb      0x445 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-impure.o)
+ .debug_str     0x0000000000001087      0x445 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-impure.o)
                                         0x58c (size before relaxing)
- .debug_str     0x0000000000001420       0x90 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-init.o)
+ .debug_str     0x00000000000014cc       0x90 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-init.o)
                                         0x21a (size before relaxing)
- .debug_str     0x00000000000014b0       0x30 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-__atexit.o)
+ .debug_str     0x000000000000155c       0x30 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-__atexit.o)
                                         0x5d4 (size before relaxing)
- .debug_str     0x00000000000014e0       0x86 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-__call_atexit.o)
+ .debug_str     0x000000000000158c       0x86 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-__call_atexit.o)
                                         0x5ec (size before relaxing)
 
 .debug_frame    0x0000000000000000      0xa94
- .debug_frame   0x0000000000000000      0x2d0 build/StdPeriph_Driver/src/stm32f10x_gpio.o
- .debug_frame   0x00000000000002d0      0x4f4 build/StdPeriph_Driver/src/stm32f10x_rcc.o
+ .debug_frame   0x0000000000000000      0x2d0 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_gpio.o
+ .debug_frame   0x00000000000002d0      0x4f4 build//home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_rcc.o
  .debug_frame   0x00000000000007c4       0xe4 build/src/delay.o
  .debug_frame   0x00000000000008a8       0x50 build/src/main.o
  .debug_frame   0x00000000000008f8       0x98 build/src/system_stm32f10x.o

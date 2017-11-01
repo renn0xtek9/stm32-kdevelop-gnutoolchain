@@ -27,7 +27,7 @@ Type=Native Application
 
 [Launch][Launch Configuration 0][Data]
 Arguments=
-Debugger Shell=file:///home/max/Projects/Projets/STM32_Helloworld_standard/shell_script.sh
+Debugger Shell=
 Dependencies=@Variant(\x00\x00\x00\t\x00\x00\x00\x00\x00)
 Dependency Action=Nothing
 Display Demangle Names=true
@@ -44,6 +44,9 @@ Start With=GdbConsole
 Use External Terminal=false
 Working Directory=
 isExecutable=true
+
+[MakeBuilder]
+Default Target=all
 
 [Project]
 VersionControlSupport=kdevgit
