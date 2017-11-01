@@ -35,6 +35,7 @@
   ******************************************************************************
   */
 
+
 /* Includes ------------------------------------------------------------------*/
 #include "usb_lib.h"
 #include "usb_desc.h"
@@ -181,4 +182,3 @@ uint8_t Virtual_Com_Port_StringSerial[VIRTUAL_COM_PORT_SIZ_STRING_SERIAL] =
   };
 
 /************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/
-

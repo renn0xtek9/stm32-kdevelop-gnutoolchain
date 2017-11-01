@@ -1,10 +1,10 @@
 /**
   ******************************************************************************
-  * @file    usb_endp.c
+  * @file    stm32_it.h
   * @author  MCD Application Team
   * @version V4.1.0
   * @date    26-May-2017
-  * @brief   Endpoint routines
+  * @brief   This file contains the headers of the interrupt handlers.
   ******************************************************************************
   * @attention
   *
@@ -36,53 +36,38 @@
   */
 
 
+/* Define to prevent recursive inclusion -------------------------------------*/
+#ifndef __STM32_IT_H
+#define __STM32_IT_H
+
+#include "stm32f10x.h"
+
+/* Global Variables-----------------------------------------------------------*/
+// For store tick counts in us
+__IO uint32_t usTicks;
+
+
+
 /* Includes ------------------------------------------------------------------*/
-#include "usb_lib.h"
-#include "usb_desc.h"
-#include "usb_mem.h"
-#include "hw_config.h"
-#include "usb_istr.h"
-#include "usb_pwr.h"
+#include "platform_config.h"
 
-/* Private typedef -----------------------------------------------------------*/
-/* Private define ------------------------------------------------------------*/
+/* Exported types ------------------------------------------------------------*/
+/* Exported constants --------------------------------------------------------*/
+/* Exported macro ------------------------------------------------------------*/
+/* Exported functions ------------------------------------------------------- */
 
-/* Interval between sending IN packets in frame number (1 frame = 1ms) */
-#define VCOMPORT_IN_FRAME_INTERVAL             5
-/* Private macro -------------------------------------------------------------*/
-/* Private variables ---------------------------------------------------------*/
-extern __IO uint32_t packet_sent;
-extern __IO uint32_t packet_receive;
-extern __IO uint8_t Receive_Buffer[64];
-uint32_t Receive_length;
-/* Private function prototypes -----------------------------------------------*/
-/* Private functions ---------------------------------------------------------*/
+void NMI_Handler(void);
+void HardFault_Handler(void);
+void MemManage_Handler(void);
+void BusFault_Handler(void);
+void UsageFault_Handler(void);
+void SVC_Handler(void);
+void DebugMon_Handler(void);
+void PendSV_Handler(void);
+void SysTick_Handler(void);
+void USBWakeUp_IRQHandler(void);
+void USB_FS_WKUP_IRQHandler(void);
 
-/*******************************************************************************
-* Function Name  : EP1_IN_Callback
-* Description    :
-* Input          : None.
-* Output         : None.
-* Return         : None.
-*******************************************************************************/
-
-void EP1_IN_Callback (void)
-{
-  packet_sent = 1;
-}
-
-/*******************************************************************************
-* Function Name  : EP3_OUT_Callback
-* Description    :
-* Input          : None.
-* Output         : None.
-* Return         : None.
-*******************************************************************************/
-void EP3_OUT_Callback(void)
-{
-  packet_receive = 1;
-  Receive_length = GetEPRxCount(ENDP3);
-  PMAToUserBufferCopy((unsigned char*)Receive_Buffer, ENDP3_RXADDR, Receive_length);
-}
+#endif /* __STM32_IT_H */
 
 /************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/

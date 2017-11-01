@@ -102,4 +102,3 @@ void ESOF_Callback(void);
 #endif /*__USB_ISTR_H*/
 
 /************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/
-

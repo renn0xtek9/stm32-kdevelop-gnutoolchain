@@ -35,35 +35,28 @@
   ******************************************************************************
   */
 
-
 /* Includes ------------------------------------------------------------------*/
-#include "stm32f10x_gpio.h"
-#include "stm32f10x_it.h"
+
+#include "stm32_it.h"
 #include "usb_lib.h"
 #include "usb_prop.h"
 #include "usb_desc.h"
 #include "hw_config.h"
 #include "usb_pwr.h"
-#include "usb_core.h"
-
+#include "stm32f10x_conf.h"
 /* Private typedef -----------------------------------------------------------*/
-/* Communication boards USART Interface */
 /* Private define ------------------------------------------------------------*/
 /* Private macro -------------------------------------------------------------*/
 /* Private variables ---------------------------------------------------------*/
 ErrorStatus HSEStartUpStatus;
-
 EXTI_InitTypeDef EXTI_InitStructure;
+extern __IO uint32_t packet_sent;
+extern __IO uint8_t Send_Buffer[VIRTUAL_COM_PORT_DATA_SIZE] ;
+extern __IO  uint32_t packet_receive;
+extern __IO uint8_t Receive_length;
 
-#ifdef VCP_RX_BY_DMA
-DMA_InitTypeDef  DMA_InitStructure;
-#endif
-
-uint32_t USART_Rx_ptr_in = 0;
-uint32_t USART_Rx_ptr_out = 0;
-uint32_t USART_Rx_length  = 0;
-
-uint8_t  USB_Tx_State = 0;
+uint8_t Receive_Buffer[64];
+uint32_t Send_length;
 static void IntToUnicode (uint32_t value , uint8_t *pbuf , uint8_t len);
 /* Extern variables ----------------------------------------------------------*/
 
@@ -79,13 +72,7 @@ extern LINE_CODING linecoding;
 *******************************************************************************/
 void Set_System(void)
 {
-  GPIO_InitTypeDef  GPIO_InitStructure;
-  
-#ifdef VCP_RX_BY_DMA
-  TIM_TimeBaseInitTypeDef  TIM_TimeBaseStructure;
-  NVIC_InitTypeDef NVIC_InitStructure;
-#endif
-  
+  GPIO_InitTypeDef  GPIO_InitStructure;  
   /*!< At this stage the microcontroller clock setting is already configured, 
        this is done through SystemInit() function which is called from startup
        file (startup_stm32xxx.s) before to branch to application main.
@@ -93,16 +80,11 @@ void Set_System(void)
        system_stm32xxx.c file
      */ 
   
-#if defined(STM32L1XX_MD) || defined(STM32L1XX_HD) || defined(STM32F37X) || defined(STM32F303xC) || defined(STM32F303xE)
+#if defined(STM32L1XX_MD) || defined(STM32L1XX_HD) || defined(STM32F37X) || defined(STM32F303xC) || defined(STM32F303xE) || defined(STM32F302x8)
   RCC_AHBPeriphClockCmd(RCC_AHBPeriph_GPIOA, ENABLE);
 
 #else /* defined(STM32F10X_HD) || defined(STM32F10X_MD) defined(STM32F10X_XL)*/
   RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOA, ENABLE);
-  //Place you code here ? 
-  	GPIO_InitTypeDef gpioa_init_struct={GPIO_Pin_5,GPIO_Speed_50MHz,GPIO_Mode_Out_PP};  	//Define the port a init structure
-	GPIO_Init(GPIOA,&gpioa_init_struct);							// Initialize it
-	GPIO_SetBits(GPIOA,GPIO_Pin_5);	
-  
   
 #endif
   
@@ -146,7 +128,8 @@ void Set_System(void)
   GPIO_PinAFConfig(GPIOA, GPIO_PinSource12, GPIO_AF_14);
   
 #endif 
-  
+
+#if ! defined(USE_NUCLEO)  
   /********************************************/
   /* Enable the USB PULL UP                   */
   /********************************************/
@@ -181,7 +164,7 @@ void Set_System(void)
   GPIO_Init(USB_DISCONNECT, &GPIO_InitStructure);
   
 #endif
-  
+#endif /* USE_NUCLEO */    
 #ifdef USB_LOW_PWR_MGMT_SUPPORT
   
   /**********************************************************************/
@@ -195,32 +178,6 @@ void Set_System(void)
   EXTI_Init(&EXTI_InitStructure);
 
 #endif  /* USB_LOW_PWR_MGMT_SUPPORT */
-  
-#ifdef VCP_RX_BY_DMA
-  /********************************************************************************/
-  /*      Configure Timer. It will be used (instead of SOF) to check USART buffer */
-  /********************************************************************************/
-
-  /* Enable the TIM2 gloabal Interrupt */
-  NVIC_InitStructure.NVIC_IRQChannel = TIM2_IRQn;
-  NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority = 0;
-  NVIC_InitStructure.NVIC_IRQChannelSubPriority = 1;
-  NVIC_InitStructure.NVIC_IRQChannelCmd = ENABLE;
-  NVIC_Init(&NVIC_InitStructure);
-  
-  /* TIM2 clock enable */
-  RCC_APB1PeriphClockCmd(RCC_APB1Periph_TIM2, ENABLE);
-  
-  /* Time base configuration */
-  TIM_TimeBaseStructure.TIM_Period = 348;/* This will be changed when the COM port is configured */
-  TIM_TimeBaseStructure.TIM_Prescaler = 31;// 32 - 1
-  TIM_TimeBaseStructure.TIM_ClockDivision = 0;
-  TIM_TimeBaseStructure.TIM_CounterMode = TIM_CounterMode_Up;
-  TIM_TimeBaseInit(TIM2, &TIM_TimeBaseStructure);
-  
-  /* TIM IT enable */
-  TIM_ITConfig(TIM2, TIM_IT_Update, ENABLE);
-#endif 
 }
 
 /*******************************************************************************
@@ -264,7 +221,7 @@ void Leave_LowPowerMode(void)
   {
     bDeviceState = ATTACHED;
   }
-  /*Enable SystemCoreClock*/
+    /*Enable SystemCoreClock*/
   SystemInit();
 }
 
@@ -276,24 +233,25 @@ void Leave_LowPowerMode(void)
 *******************************************************************************/
 void USB_Interrupts_Config(void)
 {
-  NVIC_InitTypeDef NVIC_InitStructure; 
-  
+NVIC_InitTypeDef NVIC_InitStructure;
+
   /* 2 bit for pre-emption priority, 2 bits for subpriority */
-  NVIC_PriorityGroupConfig(NVIC_PriorityGroup_2);  
-  
-#if defined(STM32L1XX_MD) || defined(STM32L1XX_HD)|| defined(STM32L1XX_MD_PLUS)
+  NVIC_PriorityGroupConfig(NVIC_PriorityGroup_2);
+ 
+#if defined(STM32L1XX_MD)|| defined(STM32L1XX_HD) || defined(STM32L1XX_MD_PLUS)
+  /* Enable the USB interrupt */
   NVIC_InitStructure.NVIC_IRQChannel = USB_LP_IRQn;
   NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority = 2;
   NVIC_InitStructure.NVIC_IRQChannelSubPriority = 0;
   NVIC_InitStructure.NVIC_IRQChannelCmd = ENABLE;
   NVIC_Init(&NVIC_InitStructure);
-  
-    /* Enable the USB Wake-up interrupt */
+
+  /* Enable the USB Wake-up interrupt */
   NVIC_InitStructure.NVIC_IRQChannel = USB_FS_WKUP_IRQn;
-  NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority = 4;
+  NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority = 1;
   NVIC_InitStructure.NVIC_IRQChannelCmd = ENABLE;
   NVIC_Init(&NVIC_InitStructure);
-  
+
 #elif defined(STM32F37X)
   /* Enable the USB interrupt */
   NVIC_InitStructure.NVIC_IRQChannel = USB_LP_IRQn;
@@ -304,33 +262,26 @@ void USB_Interrupts_Config(void)
   
   /* Enable the USB Wake-up interrupt */
   NVIC_InitStructure.NVIC_IRQChannel = USBWakeUp_IRQn;
-  NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority = 0;
+  NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority = 1;
   NVIC_InitStructure.NVIC_IRQChannelCmd = ENABLE;
   NVIC_Init(&NVIC_InitStructure);
   
 #else
+  /* Enable the USB interrupt */
   NVIC_InitStructure.NVIC_IRQChannel = USB_LP_CAN1_RX0_IRQn;
-  NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority = 0;
+  NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority = 2;
   NVIC_InitStructure.NVIC_IRQChannelSubPriority = 0;
   NVIC_InitStructure.NVIC_IRQChannelCmd = ENABLE;
   NVIC_Init(&NVIC_InitStructure);
   
-    /* Enable the USB Wake-up interrupt */
+  /* Enable the USB Wake-up interrupt */
   NVIC_InitStructure.NVIC_IRQChannel = USBWakeUp_IRQn;
-  NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority = 0;
-  NVIC_Init(&NVIC_InitStructure);
-#endif /* STM32L1XX_XD */
-
-  /* Enable USART Interrupt */
-  NVIC_InitStructure.NVIC_IRQChannel = EVAL_COM1_IRQn;
-  NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority = 0;
-  NVIC_Init(&NVIC_InitStructure);
-  
-  NVIC_InitStructure.NVIC_IRQChannel = USARTx_TX_DMA_IRQ;
-  NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority = 0;
-  NVIC_Init(&NVIC_InitStructure);
+  NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority = 1;
+  NVIC_Init(&NVIC_InitStructure);   
+#endif
 }
 
+#if !defined (USE_NUCLEO)
 /*******************************************************************************
 * Function Name  : USB_Cable_Config
 * Description    : Software Connection/Disconnection of USB Cable
@@ -349,7 +300,7 @@ void USB_Cable_Config (FunctionalState NewState)
     STM32L15_USB_DISCONNECT;
   }  
   
-#else /* USE_STM3210B_EVAL or USE_STM3210E_EVAL */
+#else 
   if (NewState != DISABLE)
   {
     GPIO_ResetBits(USB_DISCONNECT, USB_DISCONNECT_PIN);
@@ -358,8 +309,9 @@ void USB_Cable_Config (FunctionalState NewState)
   {
     GPIO_SetBits(USB_DISCONNECT, USB_DISCONNECT_PIN);
   }
-#endif /* STM32L1XX_MD */
+#endif
 }
+#endif /* USE_NUCLEO */
 
 /*******************************************************************************
 * Function Name  : Get_SerialNum.
@@ -374,8 +326,8 @@ void Get_SerialNum(void)
 
   Device_Serial0 = *(uint32_t*)ID1;
   Device_Serial1 = *(uint32_t*)ID2;
-  Device_Serial2 = *(uint32_t*)ID3;  
-
+  Device_Serial2 = *(uint32_t*)ID3;
+ 
   Device_Serial0 += Device_Serial2;
 
   if (Device_Serial0 != 0)
@@ -413,5 +365,45 @@ static void IntToUnicode (uint32_t value , uint8_t *pbuf , uint8_t len)
   }
 }
 
-/************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/
+/*******************************************************************************
+* Function Name  : Send DATA .
+* Description    : send the data received from the STM32 to the PC through USB  
+* Input          : None.
+* Output         : None.
+* Return         : None.
+*******************************************************************************/
+uint32_t CDC_Send_DATA (uint8_t *ptrBuffer, uint8_t Send_length)
+{
+  /*if max buffer is Not reached*/
+  if(Send_length < VIRTUAL_COM_PORT_DATA_SIZE)     
+  {
+    /*Sent flag*/
+    packet_sent = 0;
+    /* send  packet to PMA*/
+    UserToPMABufferCopy((unsigned char*)ptrBuffer, ENDP1_TXADDR, Send_length);
+    SetEPTxCount(ENDP1, Send_length);
+    SetEPTxValid(ENDP1);
+  }
+  else
+  {
+    return 0;
+  } 
+  return 1;
+}
 
+/*******************************************************************************
+* Function Name  : Receive DATA .
+* Description    : receive the data from the PC to STM32 and send it through USB
+* Input          : None.
+* Output         : None.
+* Return         : None.
+*******************************************************************************/
+uint32_t CDC_Receive_DATA(void)
+{ 
+  /*Receive flag*/
+  packet_receive = 0;
+  SetEPRxValid(ENDP3); 
+  return 1 ;
+}
+
+/************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/

@@ -80,9 +80,9 @@ void (*pEpInt_OUT[7])(void) =
 /*******************************************************************************
 * Function Name  : USB_Istr
 * Description    : ISTR events interrupt service routine
-* Input          : None.
-* Output         : None.
-* Return         : None.
+* Input          :
+* Output         :
+* Return         :
 *******************************************************************************/
 void USB_Istr(void)
 {
@@ -213,7 +213,6 @@ void USB_Istr(void)
       
         /*poll for RESET flag in ISTR*/
         while((_GetISTR()&ISTR_RESET) == 0);
-  
         /* clear RESET flag in ISTR */
         _SetISTR((uint16_t)CLR_RESET);
    
@@ -241,4 +240,3 @@ void USB_Istr(void)
 
 
 /************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/
-
