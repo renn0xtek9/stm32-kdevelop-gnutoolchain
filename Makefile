@@ -19,15 +19,13 @@ CORETYPE=cortex-m3
 SOURCES += $(shell ls $(PERIPH)/src/*.c)
 SOURCES += $(shell ls src/*.c)
 SOURCES += startup/startup_stm32.s 
-
-
+#--------------------------Include
 INCLUDES += -I$(DEVICE)/ \
 			-I$(CORE)/ \
  			-I$(PERIPH)/inc \
 			-I$(STM32_STDLIBV_4_1)/Libraries/CMSIS/Device/ST/STM32F10x/Include \
-			-I$(STM32_STDLIBV_4_1)/Libraries/STM32_USB-FS-Device_Driver/inc \
 			-Iinc
-			
+#--------------------------Compiler defines !
 DEFINES += -D$(ARCHI)\
 	-D$(TYPE)\
 	-D$(DENSITY)\
@@ -54,19 +52,15 @@ CFLAGS  = -O0 -g -Wall -I.\
 LDSCRIPT = LinkerScript.ld
 LDFLAGS += -T$(LDSCRIPT) -mthumb -mcpu=$(CORETYPE) -mfloat-abi=soft -Wl,-Map=output.map -Wl,--gc-section
 
-#--------------------------Catch enviroment variable
-STM32_STDLIBV_4_1:=$(STM32_STDLIBV_4_1)
-STM32_STDLIBV_4_1:=$(STM32_STDLIBV_4_1)
-STLINK_DEVICE := $(STLINK_DEVICE)
+
 #--------------------------Check excutable 
 STFLASH := $(shell command -v st-flash 2> /dev/null)
 ARM_NONE_EABI_GDB := $(shell command -v arm-none-eabi-gdb 2>/dev/null)
 
+configure: 
+	./configscripts/copy_startup_file.sh $(STM32_STDLIBV_4_1) $(DENSITY) $(FAMILY)
 
-configure: check
-	./configure/copy_startup_file.sh $(STM32_STDLIBV_4_1) $(DENSITY)
-
-check:
+check: configure
 	@echo SOURCES "\n"  $(SOURCES) 
 	@echo "\n"
 	@echo INCLUDES "\n" $(INCLUDES) 
@@ -90,9 +84,7 @@ ifeq ($(STM32_STDLIBV_4_1),)
 	$(error Please define environment variable STM32_STDLIBV_4_1)
 endif	
 	@echo STM32_STDLIBV_4_1 $(STM32_STDLIBV_4_1)
-# 	Check wether all files are here
-	./configure/check_files_and_folder.sh $(SOURCES)
-# 	Check wether all includes are here
+
 	
 $(BIN): $(ELF)
 	@echo Objet $(OBJCOPY)
