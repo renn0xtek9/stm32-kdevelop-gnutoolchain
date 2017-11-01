@@ -19,12 +19,15 @@ CORETYPE=cortex-m3
 SOURCES += $(shell ls $(PERIPH)/src/*.c)
 SOURCES += $(shell ls src/*.c)
 SOURCES += startup/startup_stm32.s 
+SOURCES += $(IRMP)/irsnd.c
+
 #--------------------------Include
 INCLUDES += -I$(DEVICE)/ \
 			-I$(CORE)/ \
  			-I$(PERIPH)/inc \
 			-I$(STM32_STDLIBV_4_1)/Libraries/CMSIS/Device/ST/STM32F10x/Include \
-			-Iinc
+			-Iinc\
+			-I$(IRMP)\
 #--------------------------Compiler defines !
 DEFINES += -D$(ARCHI)\
 	-D$(TYPE)\

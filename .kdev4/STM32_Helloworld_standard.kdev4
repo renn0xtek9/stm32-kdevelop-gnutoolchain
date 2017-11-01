@@ -11,10 +11,11 @@ parserArgumentsC=-ferror-limit=100 -fspell-checking -Wdocumentation -Wunused-par
 Name=Clang
 
 [CustomDefinesAndIncludes][ProjectPath0][Includes]
-1=/home/max/Projects/Projets/STM32_Helloworld_standard/CMSIS/core/
-2=/home/max/Projects/Projets/STM32_Helloworld_standard/CMSIS/device/
-3=/home/max/Projects/Projets/STM32_Helloworld_standard/inc/
-4=/home/max/Projects/Projets/STM32_Helloworld_standard/StdPeriph_Driver/inc/
+1=/home/max/Projects/Projets/STM32_Helloworld_standard/inc/
+2=/home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32F10x_StdPeriph_Driver/inc
+3=/home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/CMSIS/Include
+4=/home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/CMSIS/Device/ST/STM32F10x/Include
+5=/home/max/Projects/Sources/irmp/
 
 [Launch]
 Launch Configurations=Launch Configuration 0
