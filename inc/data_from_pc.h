@@ -16,4 +16,8 @@ void ReceiveAndLoopBack();
 uint8_t ConcatenateIntArrayToInt(uint8_t* array, unsigned int length);
 void SendAsciRepresentationOfIntToPC(int int_to_send);
 
+int __io_putchar(int c);
+uint32_t n_ms ;
+
+
 #endif

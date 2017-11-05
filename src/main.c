@@ -11,6 +11,7 @@
 #include "irsnd.h"	
 #include "data_from_pc.h"
 #include "itoa.h"
+#include "printf_.h"
 //-------------------------------------This bit is directly tooked form irmp library examples
 
 #ifndef F_CPU
@@ -66,8 +67,8 @@ void InitInputOutput()
 	GPIO_SetBits(GPIOA,GPIO_Pin_5);	
 }
 extern __IO uint8_t Receive_Buffer[64];
-extern __IO  uint32_t Receive_length ;
-extern __IO  uint32_t length ;
+extern __IO uint32_t Receive_length ;
+extern __IO uint32_t length ;
 uint8_t Send_Buffer[64];
 uint32_t packet_sent=1;
 uint32_t packet_receive=1;
@@ -92,22 +93,25 @@ int main(void)
 	timer2_init();
 	
 
-	irmp_data.command=16;
-	irmp_data.address=21;
 
-	uint32_t n_ms=500;
+
+
+	n_ms=500;
 	uint8_t iter_counter=0;
 	for(;;)
 	{
 		ReceiveAndLoopBack();
-		SendAsciRepresentationOfIntToPC(irmp_data.address); DelayMs(20);
-		SendAsciRepresentationOfIntToPC(irmp_data.command); DelayMs(20);
+		
+		
+		
 		if(Datareceived.shoot_is_due==1)
 		{
 			
 			irmp_data.protocol = IRMP_RC5_PROTOCOL;			// use RC5 protocol (typical of e.g. Philips)
-			irmp_data.address=(uint16_t)ConcatenateIntArrayToInt(Datareceived.address,3);
-			irmp_data.command=(uint16_t)ConcatenateIntArrayToInt(Datareceived.command,3);
+			printf_("Will concatenate address\n\r");
+			irmp_data.address=ConcatenateIntArrayToInt(Datareceived.address,3);
+			printf_("Will concatenate command\n\r");
+			irmp_data.command=ConcatenateIntArrayToInt(Datareceived.command,3);
 			irmp_data.flags    = 0;					// don't repeat frame
 
 // 			SendAsciRepresentationOfIntToPC((int)Datareceived.address[0]);

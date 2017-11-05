@@ -1,14 +1,23 @@
+#include  <errno.h>
+#include <stdio.h>
+#include  <sys/unistd.h> // STDOUT_FILENO, STDERR_FILENO
 #include "data_from_pc.h"
 #include "itoa.h"
 #include "atoi.h"
 #include "delay.h"
+#include "printf_.h"
 struct DataFromPC Datareceived ={{0,0,0},{0,0,0},0};
 extern __IO uint8_t Receive_Buffer[64];
 extern __IO  uint32_t Receive_length ;
 extern __IO  uint32_t length ;
+
 char MsgReceived[]={'R','e','c','e','v','e','i','d','\n'};
 char nl='\n';
 char MsgLength[]={'L','e','n','g','t','h','\n'};
+
+
+
+
 void ReceiveAndLoopBack()
 {
 	if (bDeviceState == CONFIGURED)
@@ -21,37 +30,18 @@ void ReceiveAndLoopBack()
 			// prefere using small programm like picocom that will send char by char
 			if(Receive_length==7) 
 			{
-				//very ugly way to copy data I know..
-				CDC_Send_DATA((uint8_t*)MsgReceived,sizeof(MsgReceived)); DelayMs(20);
-// 				Datareceived.address[0]=Receive_Buffer[0];
-// 				Datareceived.address[1]=Receive_Buffer[1];
-// 				Datareceived.address[2]=Receive_Buffer[2];
-// 				Datareceived.command[0]=Receive_Buffer[4];
-// 				Datareceived.command[1]=Receive_Buffer[5];
-// 				Datareceived.command[2]=Receive_Buffer[6];
-				Datareceived.address[0]=atoi(Receive_Buffer+0,1);
-				Datareceived.address[1]=atoi(Receive_Buffer+0,1);
-				Datareceived.address[2]=atoi(Receive_Buffer+0,1);
-				Datareceived.command[0]=atoi(Receive_Buffer+0,1);
-				Datareceived.command[1]=atoi(Receive_Buffer+0,1);
-				Datareceived.command[2]=atoi(Receive_Buffer+0,1);
+				Datareceived.address[0]=atoi((char*)Receive_Buffer+0,1);
+				Datareceived.address[1]=atoi((char*)Receive_Buffer+1,1);
+				Datareceived.address[2]=atoi((char*)Receive_Buffer+2,1);
+				Datareceived.command[0]=atoi((char*)Receive_Buffer+4,1);
+				Datareceived.command[1]=atoi((char*)Receive_Buffer+5,1);
+				Datareceived.command[2]=atoi((char*)Receive_Buffer+6,1);
+				//Up to there it is valid 1!!
 
-				
-
-				Datareceived.shoot_is_due=1;
-				/*DelayMs(20);
-				int i;
-				for(i=0;i<7;i++)
-				{
-					SendAsciRepresentationOfIntToPC(Receive_Buffer[i]);
-					DelayMs(20);
-				}*/
-				
+				Datareceived.shoot_is_due=1;				
 			}	
 			//Loop back (we sent back the data that we received so that it appear on the console of the PC)
-			CDC_Send_DATA ((unsigned char*)Receive_Buffer,Receive_length);DelayMs(20);
-// 			CDC_Send_DATA ((unsigned char*)Receive_Buffer,64);
-			CDC_Send_DATA(&nl,1);
+			CDC_Send_DATA ((unsigned char*)Receive_Buffer,Receive_length);DelayMs(10);
 			Receive_length = 0;
 		}
 	}	
@@ -61,19 +51,33 @@ uint8_t ConcatenateIntArrayToInt(uint8_t* array, unsigned int length)
 	/*STATUS [x]Reviewed [x]Verified []Extensively Unit-Tested
 	 * This concatenate an array of digit to int. It is assume tha the digit come stored with ascii code	
 	*/
+	printf_("Entering concatenate with\n\r");
+	int i=0;
+	for(i=0;i<length;i++)
+	{
+		printf_("array[%d]= %d\n\r",i,array[i]);
+	}
+
+
 	uint8_t ret=0;
 	char str[64]; // TODO  use malloc over length here !!
-	char c;
+	char tmpbuf[2]; //We need two char, the last one being for string termianteion aka /0
 // 	char ** str = (char **) malloc(length * sizeof(char *));
 	unsigned int iter=0;
 	for (iter=0; iter<length;iter++)
 	{
 		int sublength;
-		itoa(array[iter],&c,10,&sublength);
-		str[iter]=c;		
+		itoa(array[iter],tmpbuf,10,&sublength);
+		str[iter]=tmpbuf[0];		
+		printf_("itoa of %d = %d ; str[%d] now is %d \n\r",iter,tmpbuf[0],iter,str[iter]);
 	}
 	//Now the first length character of str are the number (e.g if array= {4,5,6} then str should be {'4','5','6','whatever','whateve',...}
-	ret=(uint8_t)atoi(str,length);
+	for(i=0;i<length;i++)
+	{
+		printf_("buffer[%d]= %d\n\r",i,str[i]);
+	}
+	ret=atoi(str,length);
+	printf_("ret= %d\n\r",ret);
 	return ret;
 }
 void SendAsciRepresentationOfIntToPC(int int_to_send)
@@ -86,4 +90,3 @@ void SendAsciRepresentationOfIntToPC(int int_to_send)
 	itoa(int_to_send,buf,10,&length);
 	CDC_Send_DATA((unsigned char*) buf,length); DelayMs(20);
 }
-
