@@ -1,4 +1,3 @@
-break main.c:101
-break data_from_pc.c:19
-break main.c:104
+break main.c:103
+break data_from_pc.c:102
 continue 
