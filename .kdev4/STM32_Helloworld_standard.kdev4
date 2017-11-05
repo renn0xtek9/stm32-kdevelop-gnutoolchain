@@ -17,6 +17,7 @@ Name=Clang
 4=/home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/CMSIS/Device/ST/STM32F10x/Include
 5=/home/max/Projects/Sources/irmp/
 6=/home/max/Projects/Sources/STM32_USB-FS-Device_Lib_V4.1.0/Libraries/STM32_USB-FS-Device_Driver/inc
+7=/usr/lib/gcc/arm-none-eabi/4.9.3/include/
 
 [Launch]
 Launch Configurations=Launch Configuration 0
