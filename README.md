@@ -19,8 +19,8 @@ You will need following program:
 * the source of the standard peripheral library. **You need to download this from ST website!**
 * time ....
 
-Recommend:
-* picocom (for virtual com port communication)
+Recommended
+* picocom (for virtual com port communications)
 
 ## How-to 
 Those helloworld program are meant to work out of the box. Bear in mind however the current state of the project is very pre-pre-pre alpha. Also their might be things to change if you e.g. use a different MCU.

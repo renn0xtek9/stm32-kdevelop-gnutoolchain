@@ -1,2 +1,4 @@
-load /home/max/Projects/Projets/STM32_Helloworld_standard/build/program.elf 
+break main.c:101
+break data_from_pc.c:19
+break main.c:104
 continue 

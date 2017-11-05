@@ -93,3 +93,4 @@
 #endif /* __STM32F10x_CONF_H */
 
 /************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/
+

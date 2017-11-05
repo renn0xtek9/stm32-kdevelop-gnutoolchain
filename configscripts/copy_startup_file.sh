@@ -14,3 +14,6 @@ echo $file found
 mkdir -p startup
 cp $file startup/startup_stm32.s 
 exit 0
+
+
+
