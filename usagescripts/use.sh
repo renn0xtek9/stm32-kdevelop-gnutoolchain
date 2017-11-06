@@ -4,7 +4,7 @@ devicefile=/dev/ttyACM0
 
 #*********************************Commands 
 Aux="$(pwd)/shoot.sh 21 63"
-Shutdown="$(pwd)/shoot.sh 20 13"
+Shutdown="$(pwd)/shoot.sh 20 12"
 
 Bassplus="$(pwd)/shoot.sh 16 22"
 Bassminus="$(pwd)/shoot.sh 16 23"

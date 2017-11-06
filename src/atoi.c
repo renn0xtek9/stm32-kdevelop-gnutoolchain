@@ -13,7 +13,6 @@ unsigned int IntPow(unsigned int a , unsigned int exponent)
 
 unsigned int atoi(char* str, int length)
 {
-	printf_("Enter atoi \n\r");
 	unsigned int ret=0;
 	unsigned int digit,order;
 	int iter=0;
@@ -21,12 +20,9 @@ unsigned int atoi(char* str, int length)
 	order=1;
 	for (iter=0;iter<length;iter++)
 	{
-		printf_("atoi:: str[%d]=%d\n\r",iter,str[iter]);
 		digit=str[iter]-ascii_start;
-		printf_("atoi:: digit=%d\n\r",digit);
 		order = IntPow(10, length-iter-1);
 		ret += order* digit;		
-		printf_("atoi:: ret=%d\n\r",ret);
 	}
 	return ret;	
 }

@@ -37,7 +37,6 @@ void ReceiveAndLoopBack()
 				Datareceived.command[1]=atoi((char*)Receive_Buffer+5,1);
 				Datareceived.command[2]=atoi((char*)Receive_Buffer+6,1);
 				//Up to there it is valid 1!!
-
 				Datareceived.shoot_is_due=1;				
 			}	
 			//Loop back (we sent back the data that we received so that it appear on the console of the PC)
@@ -51,14 +50,6 @@ uint8_t ConcatenateIntArrayToInt(uint8_t* array, unsigned int length)
 	/*STATUS [x]Reviewed [x]Verified []Extensively Unit-Tested
 	 * This concatenate an array of digit to int. It is assume tha the digit come stored with ascii code	
 	*/
-	printf_("Entering concatenate with\n\r");
-	int i=0;
-	for(i=0;i<length;i++)
-	{
-		printf_("array[%d]= %d\n\r",i,array[i]);
-	}
-
-
 	uint8_t ret=0;
 	char str[64]; // TODO  use malloc over length here !!
 	char tmpbuf[2]; //We need two char, the last one being for string termianteion aka /0
@@ -69,24 +60,19 @@ uint8_t ConcatenateIntArrayToInt(uint8_t* array, unsigned int length)
 		int sublength;
 		itoa(array[iter],tmpbuf,10,&sublength);
 		str[iter]=tmpbuf[0];		
-		printf_("itoa of %d = %d ; str[%d] now is %d \n\r",iter,tmpbuf[0],iter,str[iter]);
 	}
 	//Now the first length character of str are the number (e.g if array= {4,5,6} then str should be {'4','5','6','whatever','whateve',...}
-	for(i=0;i<length;i++)
-	{
-		printf_("buffer[%d]= %d\n\r",i,str[i]);
-	}
 	ret=atoi(str,length);
-	printf_("ret= %d\n\r",ret);
 	return ret;
 }
-void SendAsciRepresentationOfIntToPC(int int_to_send)
-{	
-	/*STATUS [x]Reviewed [x]Verified []Extensively Unit-Tested
-	 * Send the ASCI sequence corresponding to an interger to the PC via virtual comport !
-	*/
-	char buf[64];
-	int length;
-	itoa(int_to_send,buf,10,&length);
-	CDC_Send_DATA((unsigned char*) buf,length); DelayMs(20);
-}
+//  Don't need it anyomore since we have printf_
+// void SendAsciRepresentationOfIntToPC(int int_to_send)
+// {	
+// 	/*STATUS [x]Reviewed [x]Verified []Extensively Unit-Tested
+// 	 * Send the ASCI sequence corresponding to an interger to the PC via virtual comport !
+// 	*/
+// 	char buf[64];
+// 	int length;
+// 	itoa(int_to_send,buf,10,&length);
+// 	CDC_Send_DATA((unsigned char*) buf,length); DelayMs(20);
+// }

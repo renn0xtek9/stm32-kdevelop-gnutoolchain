@@ -76,8 +76,6 @@ uint32_t packet_receive=1;
 // For protocol communication with the computer
 extern struct DataFromPC Datareceived;
 
-
-
 int main(void)
 {
 	DelayInit();
@@ -91,45 +89,25 @@ int main(void)
 	IRMP_DATA irmp_data;
 	irsnd_init();
 	timer2_init();
-	
-
-
-
-
-	n_ms=500;
+	const int blink_rate_default=250;
+	n_ms=blink_rate_default;
 	uint8_t iter_counter=0;
 	for(;;)
 	{
-		ReceiveAndLoopBack();
-		
-		
-		
+		ReceiveAndLoopBack();		
 		if(Datareceived.shoot_is_due==1)
 		{
-			
-			irmp_data.protocol = IRMP_RC5_PROTOCOL;			// use RC5 protocol (typical of e.g. Philips)
-			printf_("Will concatenate address\n\r");
+			irmp_data.protocol = IRMP_RC5_PROTOCOL;			// use RC5 protocol (typical of e.g. Philips
 			irmp_data.address=ConcatenateIntArrayToInt(Datareceived.address,3);
-			printf_("Will concatenate command\n\r");
 			irmp_data.command=ConcatenateIntArrayToInt(Datareceived.command,3);
 			irmp_data.flags    = 0;					// don't repeat frame
-
-// 			SendAsciRepresentationOfIntToPC((int)Datareceived.address[0]);
-// 			DelayMs(50);
-// 			SendAsciRepresentationOfIntToPC((int)Datareceived.address[1]);
-// 			DelayMs(50);
-// 			SendAsciRepresentationOfIntToPC((int)Datareceived.address[3]);
-			
-			
-			SendAsciRepresentationOfIntToPC(irmp_data.address); DelayMs(20);
-			SendAsciRepresentationOfIntToPC(irmp_data.command); DelayMs(20);
-			
+			printf_("Shoooting at addr: %d cmd: %d \n\r",irmp_data.address,irmp_data.command);
 			irsnd_send_data (&irmp_data, TRUE);        
-			Datareceived.shoot_is_due=0;
-			
-			n_ms=250;
+			Datareceived.shoot_is_due=0;			
+			n_ms=100;
 		}
-		if(n_ms==250) 
+		/*
+		if(n_ms==100) 
 			iter_counter++;
 		GPIO_SetBits(GPIOA,GPIO_Pin_5);
 		DelayMs(n_ms);
@@ -137,8 +115,9 @@ int main(void)
 		DelayMs(n_ms);
 		if(iter_counter==10) 
 		{
-			n_ms=500;
+			n_ms=blink_rate_default;
 			iter_counter=0;
 		}
+		*/
 	}
 }
